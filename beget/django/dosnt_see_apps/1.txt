@@ -1,0 +1,585 @@
+------------------------------------------------------------
+~ » ssh kipparis@kipparis.beget.tech                     kip@kip-HP-Pavilion-Laptop-15-cc5xx
+lWelcome to LTD BeGet SSH Server 'maru'
+sWelcome to Ubuntu 12.04.5 LTS (GNU/Linux 4.9.132-0-beget-acl x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+Last login: Wed Dec 12 12:44:15 2018 from 185.79.101.75
+lskipparis@maru:~ [0] $ ls
+django.kipparis.beget.tech  kipparis.beget.tech  levelteleg
+kipparis@maru:~ [0] $ cd levelteleg/
+kipparis@maru:~/levelteleg [0] $ ls
+base  passenger_wsgi.py  public_html  __pycache__  tmp	venv
+kipparis@maru:~/levelteleg [0] $ ls -a
+.   base     .git	passenger_wsgi.py  __pycache__	venv
+..  .bashrc  .htaccess	public_html	   tmp
+kipparis@maru:~/levelteleg [0] $ cat .bashrc 
+ssh localhost -p222
+JORi3l0u
+source venv/bin/activate
+kipparis@maru:~/levelteleg [0] $ bash
+bash: prompt: command not found
+kipparis@maru:~/levelteleg$ cd
+bash: prompt: command not found
+kipparis@maru:~$ exit
+kipparis@maru:~/levelteleg [0] $ which bash
+/usr/bin/bash
+kipparis@maru:~/levelteleg [0] $ zsh
+-bash: zsh: command not found
+kipparis@maru:~/levelteleg [127] $ ls
+base  passenger_wsgi.py  public_html  __pycache__  tmp	venv
+kipparis@maru:~/levelteleg [0] $ bash .bashrc 
+kipparis@localhost's password: 
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 4.9.132-0-beget-acl x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+(docker) kipparis@maru:~ [0] $ which python
+/usr/bin/python
+(docker) kipparis@maru:~ [0] $ python -V
+Python 2.7.3
+(docker) kipparis@maru:~ [0] $ logout
+Connection to localhost closed.
+.bashrc: line 2: JORi3l0u: command not found
+kipparis@maru:~/levelteleg [0] $ ls
+base  passenger_wsgi.py  public_html  __pycache__  tmp	venv
+kipparis@maru:~/levelteleg [0] $ ssh localhost -p222 
+kipparis@localhost's password: 
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 4.9.132-0-beget-acl x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+(docker) kipparis@maru:~ [0] $ cd levelteleg/
+(docker) kipparis@maru:~/levelteleg [0] $ pwd
+/home/k/kipparis/levelteleg
+(docker) kipparis@maru:~/levelteleg [0] $ vim .bashrc 
+(docker) kipparis@maru:~/levelteleg [0] $ vim .bashrc 
+(docker) kipparis@maru:~/levelteleg [0] $ logout
+Connection to localhost closed.
+kipparis@maru:~/levelteleg [0] $ ls
+base  passenger_wsgi.py  public_html  __pycache__  tmp	venv
+kipparis@maru:~/levelteleg [0] $ which bash
+/usr/bin/bash
+kipparis@maru:~/levelteleg [0] $ vim .bashrc 
+kipparis@maru:~/levelteleg [0] $ cat .bashrc 
+#!/usr/bin/bash
+
+ssh localhost -p222
+JORi3l0u
+source ~/levelteleg/venv/bin/activate
+kipparis@maru:~/levelteleg [0] $ ls
+base  passenger_wsgi.py  public_html  __pycache__  tmp	venv
+kipparis@maru:~/levelteleg [0] $ ls -a
+.   base     .git	passenger_wsgi.py  __pycache__	venv
+..  .bashrc  .htaccess	public_html	   tmp
+kipparis@maru:~/levelteleg [0] $ bash .bashrc 
+kipparis@localhost's password: 
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 4.9.132-0-beget-acl x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+(docker) kipparis@maru:~ [0] $ python -V
+Python 2.7.3
+(docker) kipparis@maru:~ [0] $ logout
+Connection to localhost closed.
+.bashrc: line 4: JORi3l0u: command not found
+kipparis@maru:~/levelteleg [0] $ vim .bashrc 
+kipparis@maru:~/levelteleg [0] $ bash .bashrc 
+.bashrc: line 3: JORi3l0u: No such file or directory
+kipparis@maru:~/levelteleg [0] $ vim .bashrc 
+
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+kipparis@maru:~/levelteleg [0] $ 
+kipparis@maru:~/levelteleg [0] $ vim .bashrc 
+kipparis@maru:~/levelteleg [0] $ bash .bashrc 
+.bashrc: line 3: $(echo JORi3l0u): No such file or directory
+kipparis@maru:~/levelteleg [0] $ cat "JORi3l0u"
+cat: JORi3l0u: No such file or directory
+kipparis@maru:~/levelteleg [1] $ echo JORi3l0u
+JORi3l0u
+kipparis@maru:~/levelteleg [0] $ echo JORi3l0u | ssh localhost -p222
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+kipparis@localhost's password: 
+
+kipparis@maru:~/levelteleg [130] $ ssh localhost -p222 < echo JORi3l0u
+-bash: echo: No such file or directory
+kipparis@maru:~/levelteleg [1] $ 
+kipparis@maru:~/levelteleg [1] $ vim passwd
+kipparis@maru:~/levelteleg [0] $ ssh localhost -p222 < paste 
+Display all 1759 possibilities? (y or n)
+kipparis@maru:~/levelteleg [0] $ ssh localhost -p222 < passwd
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+kipparis@localhost's password: 
+
+kipparis@maru:~/levelteleg [130] $ ls
+base  passenger_wsgi.py  passwd  public_html  __pycache__  tmp	venv
+kipparis@maru:~/levelteleg [0] $ rm pass
+rm: cannot remove 'pass': No such file or directory
+kipparis@maru:~/levelteleg [1] $ rm pass
+passenger_wsgi.py  passwd             
+kipparis@maru:~/levelteleg [1] $ rm pass
+passenger_wsgi.py  passwd             
+kipparis@maru:~/levelteleg [1] $ rm pass
+passenger_wsgi.py  passwd             
+kipparis@maru:~/levelteleg [1] $ rm passwd 
+kipparis@maru:~/levelteleg [0] $ docker login
+-bash: docker: command not found
+kipparis@maru:~/levelteleg [127] $ ssh localhost -p222
+kipparis@localhost's password: 
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 4.9.132-0-beget-acl x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+(docker) kipparis@maru:~ [0] $ cd levelteleg/
+(docker) kipparis@maru:~/levelteleg [0] $ source venv/bin/activate
+(docker) kipparis@maru:~/levelteleg [0] $ ls
+base  passenger_wsgi.py  public_html  __pycache__  tmp	venv
+(docker) kipparis@maru:~/levelteleg [0] $ cd base/
+(docker) kipparis@maru:~/levelteleg/base [0] $ ls
+base  db.sqlite3  manage.py  welcom
+(docker) kipparis@maru:~/levelteleg/base [0] $ cd base
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ls
+__init__.py  __pycache__  settings.py  urls.py	wsgi_back.py  wsgi.py
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ vim settings.py 
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ vim settings.py 
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ cd ../../
+(docker) kipparis@maru:~/levelteleg [0] $ ls
+base  passenger_wsgi.py  public_html  __pycache__  tmp	venv
+(docker) kipparis@maru:~/levelteleg [0] $ cd base/
+(docker) kipparis@maru:~/levelteleg/base [0] $ l
+-bash: l: command not found
+(docker) kipparis@maru:~/levelteleg/base [127] $ ls
+base  db.sqlite3  manage.py  welcom
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py check
+Traceback (most recent call last):
+  File "/home/k/kipparis/levelteleg/venv/lib/python3.6/site-packages/django/apps/config.py", line 118, in create
+    cls = getattr(mod, cls_name)
+AttributeError: module 'base' has no attribute 'welcom'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./manage.py", line 17, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/k/kipparis/levelteleg/venv/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/k/kipparis/levelteleg/venv/lib/python3.6/site-packages/django/core/management/__init__.py", line 357, in execute
+    django.setup()
+  File "/home/k/kipparis/levelteleg/venv/lib/python3.6/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/k/kipparis/levelteleg/venv/lib/python3.6/site-packages/django/apps/registry.py", line 89, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/k/kipparis/levelteleg/venv/lib/python3.6/site-packages/django/apps/config.py", line 123, in create
+    import_module(entry)
+  File "/home/k/kipparis/levelteleg/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 948, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'base.welcom'
+(docker) kipparis@maru:~/levelteleg/base [1] $ cd base/
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ls
+__init__.py  __pycache__  settings.py  urls.py	wsgi_back.py  wsgi.py
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ vim settings.py 
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ cd ../
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py check
+System check identified no issues (0 silenced).
+(docker) kipparis@maru:~/levelteleg/base [0] $ cd
+(docker) kipparis@maru:~ [0] $ cd levelteleg/
+(docker) kipparis@maru:~/levelteleg [0] $ cd base
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py makemigrations
+No changes detected
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+(docker) kipparis@maru:~/levelteleg/base [0] $ cd base/
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ls
+__init__.py  __pycache__  settings.py  urls.py	wsgi_back.py  wsgi.py
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ vim settings.py 
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ cd ../
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py makemigrations
+No changes detected
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+(docker) kipparis@maru:~/levelteleg/base [0] $ python -V
+Python 3.6.0
+(docker) kipparis@maru:~/levelteleg/base [0] $ l
+-bash: l: command not found
+(docker) kipparis@maru:~/levelteleg/base [127] $ ll
+итого 164K
+drwx------+ 4 kipparis newcustomers 4,0K дек.  12 09:55 ./
+drwx------+ 7 root     root         4,0K дек.  12 14:54 ../
+drwx------+ 3 kipparis newcustomers 4,0K дек.  12 15:28 base/
+-rw-------+ 1 kipparis newcustomers 128K дек.  12 09:55 db.sqlite3
+-rwx--x--x+ 1 kipparis newcustomers  602 дек.  11 23:10 manage.py*
+drwx------+ 4 kipparis newcustomers 4,0K дек.  12 09:55 welcom/
+(docker) kipparis@maru:~/levelteleg/base [0] $ cd base/
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ls
+__init__.py  __pycache__  settings.py  urls.py	wsgi_back.py  wsgi.py
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ vim settings.py 
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ls
+__init__.py  __pycache__  settings.py  urls.py	wsgi_back.py  wsgi.py
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ cd ../
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 12, 2018 - 12:37:17
+Django version 2.1.4, using settings 'base.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+^C(docker) kipparis@maru:~/levelteleg/base [0] $ cd base/
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ vim settings.py 
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ cd ../
+(docker) kipparis@maru:~/levelteleg/base [0] $ ;ls
+-bash: syntax error near unexpected token `;'
+(docker) kipparis@maru:~/levelteleg/base [2] $ ls
+base  db.sqlite3  manage.py  welcom
+(docker) kipparis@maru:~/levelteleg/base [0] $ cd welcom/
+(docker) kipparis@maru:~/levelteleg/base/welcom [0] $ ls
+admin.py  __init__.py  models.py    tests.py  views.py
+apps.py   migrations   __pycache__  urls.py
+(docker) kipparis@maru:~/levelteleg/base/welcom [0] $ vim urls.py 
+(docker) kipparis@maru:~/levelteleg/base/welcom [0] $ ls
+admin.py  apps.py  __init__.py	migrations  models.py  __pycache__  tests.py  urls.py  views.py
+(docker) kipparis@maru:~/levelteleg/base/welcom [0] $ vim views.py 
+(docker) kipparis@maru:~/levelteleg/base/welcom [0] $ ls
+admin.py  apps.py  __init__.py	migrations  models.py  __pycache__  tests.py  urls.py  views.py
+(docker) kipparis@maru:~/levelteleg/base/welcom [0] $ ls
+admin.py  apps.py  __init__.py	migrations  models.py  __pycache__  tests.py  urls.py  views.py
+(docker) kipparis@maru:~/levelteleg/base/welcom [0] $ cd ../
+(docker) kipparis@maru:~/levelteleg/base [0] $ ls
+base  db.sqlite3  manage.py  welcom
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py makemigrations
+No changes detected
+(docker) kipparis@maru:~/levelteleg/base [0] $ ./manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+(docker) kipparis@maru:~/levelteleg/base [0] $ cd base/
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ls
+__init__.py  __pycache__  settings.py  urls.py	wsgi_back.py  wsgi.py
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ vim settings.py 
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ipython
+Python 3.6.0 (default, Dec  8 2018, 18:45:30) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.2.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from django.apps import apps                                                                      
+
+In [2]: apps.get_models()                                                                                 
+---------------------------------------------------------------------------
+AppRegistryNotReady                       Traceback (most recent call last)
+<ipython-input-2-757bb74f703f> in <module>
+----> 1 apps.get_models()
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/apps/registry.py in get_models(self, include_auto_created, include_swapped)
+    173         Set the corresponding keyword argument to True to include such models.
+    174         """
+--> 175         self.check_models_ready()
+    176 
+    177         result = []
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/apps/registry.py in check_models_ready(self)
+    135         """Raise an exception if all models haven't been imported yet."""
+    136         if not self.models_ready:
+--> 137             raise AppRegistryNotReady("Models aren't loaded yet.")
+    138 
+    139     def get_app_configs(self):
+
+AppRegistryNotReady: Models aren't loaded yet.
+
+In [3]:                                                                                                   
+Do you really want to exit ([y]/n)? yes
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ ipython
+Python 3.6.0 (default, Dec  8 2018, 18:45:30) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.2.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from django.apps import apps                                                                      
+
+In [2]: apps.get_models()                                                                                 
+---------------------------------------------------------------------------
+AppRegistryNotReady                       Traceback (most recent call last)
+<ipython-input-2-757bb74f703f> in <module>
+----> 1 apps.get_models()
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/apps/registry.py in get_models(self, include_auto_created, include_swapped)
+    173         Set the corresponding keyword argument to True to include such models.
+    174         """
+--> 175         self.check_models_ready()
+    176 
+    177         result = []
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/apps/registry.py in check_models_ready(self)
+    135         """Raise an exception if all models haven't been imported yet."""
+    136         if not self.models_ready:
+--> 137             raise AppRegistryNotReady("Models aren't loaded yet.")
+    138 
+    139     def get_app_configs(self):
+
+AppRegistryNotReady: Models aren't loaded yet.
+
+In [3]: import django                                                                                     
+
+In [4]: django.setup()                                                                                    
+---------------------------------------------------------------------------
+ImproperlyConfigured                      Traceback (most recent call last)
+<ipython-input-4-3261f89a959a> in <module>
+----> 1 django.setup()
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/__init__.py in setup(set_prefix)
+     17     from django.utils.log import configure_logging
+     18 
+---> 19     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+     20     if set_prefix:
+     21         set_script_prefix(
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __getattr__(self, name)
+     55         """Return the value of a setting and cache it in self.__dict__."""
+     56         if self._wrapped is empty:
+---> 57             self._setup(name)
+     58         val = getattr(self._wrapped, name)
+     59         self.__dict__[name] = val
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in _setup(self, name)
+     40                 "You must either define the environment variable %s "
+     41                 "or call settings.configure() before accessing settings."
+---> 42                 % (desc, ENVIRONMENT_VARIABLE))
+     43 
+     44         self._wrapped = Settings(settings_module)
+
+ImproperlyConfigured: Requested setting LOGGING_CONFIG, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+
+In [5]: django.__path__                                                                                   
+Out[5]: ['/home/k/kipparis/levelteleg/venv/lib/python3.6/site-packages/django']
+
+In [6]: import os                                                                                         
+
+In [7]: os.environ.setdefault("DJANGO_SETTINGS_MODULE", "base.settings")                                  
+Out[7]: 'base.settings'
+
+In [8]: django.setup()                                                                                    
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+<ipython-input-8-3261f89a959a> in <module>
+----> 1 django.setup()
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/__init__.py in setup(set_prefix)
+     17     from django.utils.log import configure_logging
+     18 
+---> 19     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+     20     if set_prefix:
+     21         set_script_prefix(
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __getattr__(self, name)
+     55         """Return the value of a setting and cache it in self.__dict__."""
+     56         if self._wrapped is empty:
+---> 57             self._setup(name)
+     58         val = getattr(self._wrapped, name)
+     59         self.__dict__[name] = val
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in _setup(self, name)
+     42                 % (desc, ENVIRONMENT_VARIABLE))
+     43 
+---> 44         self._wrapped = Settings(settings_module)
+     45 
+     46     def __repr__(self):
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __init__(self, settings_module)
+    105         self.SETTINGS_MODULE = settings_module
+    106 
+--> 107         mod = importlib.import_module(self.SETTINGS_MODULE)
+    108 
+    109         tuple_settings = (
+
+~/levelteleg/venv/lib/python3.6/importlib/__init__.py in import_module(name, package)
+    124                 break
+    125             level += 1
+--> 126     return _bootstrap._gcd_import(name[level:], package, level)
+    127 
+    128 
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _gcd_import(name, package, level)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _call_with_frames_removed(f, *args, **kwds)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _gcd_import(name, package, level)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+
+ModuleNotFoundError: No module named 'base'
+
+In [9]: ls                                                                                                
+__init__.py  __pycache__/  settings.py  urls.py  wsgi_back.py  wsgi.py
+
+In [10]: pwd                                                                                              
+Out[10]: '/home/k/kipparis/levelteleg/base/base'
+
+In [11]: django.setup()                                                                                   
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+<ipython-input-11-3261f89a959a> in <module>
+----> 1 django.setup()
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/__init__.py in setup(set_prefix)
+     17     from django.utils.log import configure_logging
+     18 
+---> 19     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+     20     if set_prefix:
+     21         set_script_prefix(
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __getattr__(self, name)
+     55         """Return the value of a setting and cache it in self.__dict__."""
+     56         if self._wrapped is empty:
+---> 57             self._setup(name)
+     58         val = getattr(self._wrapped, name)
+     59         self.__dict__[name] = val
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in _setup(self, name)
+     42                 % (desc, ENVIRONMENT_VARIABLE))
+     43 
+---> 44         self._wrapped = Settings(settings_module)
+     45 
+     46     def __repr__(self):
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __init__(self, settings_module)
+    105         self.SETTINGS_MODULE = settings_module
+    106 
+--> 107         mod = importlib.import_module(self.SETTINGS_MODULE)
+    108 
+    109         tuple_settings = (
+
+~/levelteleg/venv/lib/python3.6/importlib/__init__.py in import_module(name, package)
+    124                 break
+    125             level += 1
+--> 126     return _bootstrap._gcd_import(name[level:], package, level)
+    127 
+    128 
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _gcd_import(name, package, level)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _call_with_frames_removed(f, *args, **kwds)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _gcd_import(name, package, level)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+
+ModuleNotFoundError: No module named 'base'
+
+In [12]: os.environ.setdefault("DJANGO_SETTINGS_MODULE", "base.settings")                                 
+Out[12]: 'base.settings'
+
+In [13]: django.setup()                                                                                   
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+<ipython-input-13-3261f89a959a> in <module>
+----> 1 django.setup()
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/__init__.py in setup(set_prefix)
+     17     from django.utils.log import configure_logging
+     18 
+---> 19     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+     20     if set_prefix:
+     21         set_script_prefix(
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __getattr__(self, name)
+     55         """Return the value of a setting and cache it in self.__dict__."""
+     56         if self._wrapped is empty:
+---> 57             self._setup(name)
+     58         val = getattr(self._wrapped, name)
+     59         self.__dict__[name] = val
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in _setup(self, name)
+     42                 % (desc, ENVIRONMENT_VARIABLE))
+     43 
+---> 44         self._wrapped = Settings(settings_module)
+     45 
+     46     def __repr__(self):
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __init__(self, settings_module)
+    105         self.SETTINGS_MODULE = settings_module
+    106 
+--> 107         mod = importlib.import_module(self.SETTINGS_MODULE)
+    108 
+    109         tuple_settings = (
+
+~/levelteleg/venv/lib/python3.6/importlib/__init__.py in import_module(name, package)
+    124                 break
+    125             level += 1
+--> 126     return _bootstrap._gcd_import(name[level:], package, level)
+    127 
+    128 
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _gcd_import(name, package, level)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _call_with_frames_removed(f, *args, **kwds)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _gcd_import(name, package, level)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load(name, import_)
+
+~/levelteleg/venv/lib/python3.6/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+
+ModuleNotFoundError: No module named 'base'
+
+In [14]:                                                                                                  
+Do you really want to exit ([y]/n)? yes
+(docker) kipparis@maru:~/levelteleg/base/base [0] $ cd ../../
+(docker) kipparis@maru:~/levelteleg [0] $ vim passenger_wsgi.py 
+(docker) kipparis@maru:~/levelteleg [0] $ vim .
+(docker) kipparis@maru:~/levelteleg [0] $ ipython
+Python 3.6.0 (default, Dec  8 2018, 18:45:30) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.2.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from django.conf import settings                                                                  
+
+In [2]: [ app for app in settings.INSTALLED_APPS if not "django" in app ]                                 
+---------------------------------------------------------------------------
+ImproperlyConfigured                      Traceback (most recent call last)
+<ipython-input-2-37568a453f28> in <module>
+----> 1 [ app for app in settings.INSTALLED_APPS if not "django" in app ]
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in __getattr__(self, name)
+     55         """Return the value of a setting and cache it in self.__dict__."""
+     56         if self._wrapped is empty:
+---> 57             self._setup(name)
+     58         val = getattr(self._wrapped, name)
+     59         self.__dict__[name] = val
+
+~/levelteleg/venv/lib/python3.6/site-packages/django/conf/__init__.py in _setup(self, name)
+     40                 "You must either define the environment variable %s "
+     41                 "or call settings.configure() before accessing settings."
+---> 42                 % (desc, ENVIRONMENT_VARIABLE))
+     43 
+     44         self._wrapped = Settings(settings_module)
+
+ImproperlyConfigured: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+
+In [3]:                                                                                                   
+Do you really want to exit ([y]/n)? н
+Do you really want to exit ([y]/n)? y
