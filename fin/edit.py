@@ -2,7 +2,7 @@
 
 print("___________\nstarted\n")
 
-import os, sys
+import sys
 
 from openpyxl import Workbook, load_workbook
 
@@ -15,33 +15,20 @@ for arg in sys.argv:
 
         pays["A1"] = "Days"
 
-        # Filling with sht to make changes visible
-        # cell_range = pays['B1':'E5']
-
-        # for cols in cell_range:
-        #     for cell in cols:
-        #         cell.value = 4
-
-        # pays.column_dimensions['B'].width = 12
-
         days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
         spec = ['name', 'cost', 'general cost']
 
         # Merge cells and set names
         for i in range(1, 8):
-            # pays.cell(row=i, column=i, value=i)
-            # Groupted them
+            # Find two side columns to merge 
             curr_col = i * 3 - 1
             next_col = i * 3 + 1
-            curr_cell = pays.cell(row=1, column=curr_col, value=days[i - 1])
-            next_cell = pays.cell(row=1, column=next_col)
 
             pays.merge_cells(start_row=1, end_row=1, start_column=curr_col, end_column=next_col)
-            # next_cell = pays.cell(row=1, column=i * 3)
-            # to pretend bugs
+            curr_cell = pays.cell(row=1, column=curr_col, value=days[i - 1])
 
-        for i in range(1, 50):
-            pays.cell(row=i + 1, column=1, value=i)
+        # for i in range(1, 50):
+        #     pays.cell(row=i + 1, column=1, value=i)
         
         # Fixate row
         # row = pays['A1']
