@@ -14,6 +14,7 @@ for arg in sys.argv:
         pays.title = "Pays"
 
         pays["A1"] = "Days"
+        pays["A2"] = "Date\\Type"
 
         days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
         spec = ['name', 'cost', 'general cost']
@@ -26,6 +27,22 @@ for arg in sys.argv:
 
             pays.merge_cells(start_row=1, end_row=1, start_column=curr_col, end_column=next_col)
             curr_cell = pays.cell(row=1, column=curr_col, value=days[i - 1])
+
+        for i in range(1, 8):
+            
+
+
+        for col in pays.columns:
+            max_length = 0
+            column = col[0].column # Get the column name
+            for cell in col:
+                try: # Necessary to avoid error on empty cells
+                    if len(str(cell.value)) > max_length:
+                        max_length = len(cell.value)
+                except:
+                    pass
+            adjusted_width = (max_length + 2) * 1.2
+            pays.column_dimensions[column].width = adjusted_width
 
         # for i in range(1, 50):
         #     pays.cell(row=i + 1, column=1, value=i)
