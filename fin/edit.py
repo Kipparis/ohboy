@@ -5,9 +5,18 @@ print("___________\nstarted\n")
 import sys
 
 from openpyxl import Workbook, load_workbook
+from openpyxl.utils import get_column_letter
+
+from datetime import datetime, timedelta
+
+days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+spec = ['name', 'cost', 'general cost']
+
 
 for arg in sys.argv:
     if arg in "-maketable":
+        print("Making table")
+
         # создаём таблицу
         wb = Workbook()
         pays = wb.active
@@ -16,8 +25,6 @@ for arg in sys.argv:
         pays["A1"] = "Days"
         pays["A2"] = "Date\\Type"
 
-        days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-        spec = ['name', 'cost', 'general cost']
 
         # Merge cells and set names
         for i in range(1, 8):
@@ -28,7 +35,10 @@ for arg in sys.argv:
             pays.merge_cells(start_row=1, end_row=1, start_column=curr_col, end_column=next_col)
             curr_cell = pays.cell(row=1, column=curr_col, value=days[i - 1])
 
+        # Give them spec
         for i in range(1, 8):
+            for j in range(3):
+                pays.cell(row=2, column=i * 3 - 1 + j, value=spec[j])
             
 
 
@@ -43,43 +53,104 @@ for arg in sys.argv:
                     pass
             adjusted_width = (max_length + 2) * 1.2
             pays.column_dimensions[column].width = adjusted_width
-
-        # for i in range(1, 50):
-        #     pays.cell(row=i + 1, column=1, value=i)
-        
-        # Fixate row
-        # row = pays['A1']
-
-        # pays.freeze_panes = row
         # freezes all above and left
+        wb["Pays"].freeze_panes = pays.cell(row=3, column=7 * 3 + 1)
+        wb.save('fins.xlsx')
+        print("All ok")
+
+    if arg in "-add":
+        wb = load_workbook('fins.xlsx')
+        pays = wb['Pays']
+
+        today = datetime.now()
+        week_day = today.weekday()
         
-        # wb["Pays"].freeze_panes = pays.cell(row=2, column=7 * 3 + 1)
+        past_date = today - timedelta(days=week_day)
+        future_date = today + timedelta(days=(7 - week_day))
+
+        print("Start of the week: {}\nEnd of the week: {}".format(past_date, future_date))
+        
+        names = []
+        costs = []
+        while True:
+            name = input("Name your product:\n->")
+            cost = input("Type down its cost:\n->")
+
+            if name in "exit" or cost in "exit":
+                break
+
+            names.append(name) 
+            costs.append(cost)
 
 
+            print("Today: {}/{}/{}\tweek day: {}\nYou byed: {} for {}".format(today.day, today.month, today.year, days[week_day], names, costs))
+
+        # Go for table and look table
+        # check first column
+        col = pays['A']
+
+        check_row = len(col)
+        print("last row {}".format(check_row))
+
+        if len((str(pays.cell(row=check_row, column=1).value)).split('/')) == 1:
+            # Don't fit    
+            check_row += 1
+
+            pays.cell(
+                row=check_row, 
+                column=1, 
+                value="{}/{}/{}".format(past_date.day, past_date.month, past_date.year)
+                )
+
+        cell = pays.cell(row=check_row, column=1)
+        while '*' in str(cell.value):
+            check_row -= 1
+            cell = pays.cell(row=check_row, column=1)
+
+        cell_date = str(cell.value)
+
+        cell_past_date = datetime(
+            year=int(cell_date.split('/')[-1]),
+            month=int(cell_date.split('/')[1]),
+            day=int(cell_date.split('/')[0])                
+        )
+
+        if past_date.day == cell_past_date.day and past_date.month == cell_past_date.month and past_date.year == cell_past_date.year:
+            start_row = check_row
+        else:
+            # Have to move to another date
+            start_row = len(col) + 1
+            # Type there date
+            pays.cell(
+                row=start_row, 
+                column=1, 
+                value="{}/{}/{}".format(future_date.day, future_date.month, future_date.year)
+                )
+
+        # Now start row pointer is one date cell
+        # and we need to go to the column and find cell to start typing 
+        # costs
+        curr_col = 2 + week_day * 3
+        print("len curr col: {}".format(len(pays[get_column_letter(curr_col)])))
+
+        # If not => move down and find empty than \
+        # If that cell is empty => start typing product and type on left *
+
+        cell = pays.cell(row=start_row, column=curr_col)
+        while cell.value:
+            start_row -= 1
+            cell = pays.cell(row=start_row, column=curr_col)
+
+        # Start typing name, cost and * on left column ( if she empty)
+        for spend in zip(names, costs):
+            pays.cell(row=start_row, column=curr_col, value=spend[0])
+            pays.cell(row=start_row, column=curr_col+1, value=spend[1])
+
+            if not pays.cell(row=start_row, column=1).value:
+                pays.cell(row=start_row, column=1, value='*')
+        
         wb.save('fins.xlsx')
 
-
-
-
-
-# wb = load_workbook('fins.xlsx')
-
-# # ws = wb.active
-# ws = wb["Pays"]
-
-# # col = ws['A']
-
-# # Не работает почему то :(
-# col = ws['A']
-# for cell in col:
-#     cell.value = 10
-
-# ws['A1'] = 1
-# ws['A6'] = 1
-
-# for col in ws.iter_cols(min_row=1, max_col=3, max_row=2):
-#     for cell in col:
-#         print(cell.value)
 
 
 print("\nended\n***********")
