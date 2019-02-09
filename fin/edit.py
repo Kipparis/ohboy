@@ -99,7 +99,6 @@ for arg in sys.argv:
         col = pays['A']
 
         check_row = len(col)
-        print("last row {}".format(check_row))
 
         if len(pays['A']) <= 2:
             # Don't fit    
