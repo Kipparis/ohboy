@@ -254,7 +254,6 @@ start_row = len(pays['A']) + 1
 cell = pays.cell(row=start_row, column=curr_col)
 
 while not cell.value:
-    print("Cell row: {}".format(start_row))
     start_row -= 1
     cell = pays.cell(row=start_row, column=curr_col)
         
@@ -291,3 +290,4 @@ wb.save('fins.xlsx')
 ```
 print("\nended\n***********")
 ```
+

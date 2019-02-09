@@ -143,7 +143,6 @@ for arg in sys.argv:
         # and we need to go to the column and find cell to start typing 
         # costs
         curr_col = 2 + week_day * 3
-        print("len curr col: {}".format(len(pays[get_column_letter(curr_col)])))
 
         # If not => move down and find empty than \
         # If that cell is empty => start typing product and type on left *
@@ -152,7 +151,6 @@ for arg in sys.argv:
         cell = pays.cell(row=start_row, column=curr_col)
 
         while not cell.value:
-            print("Cell row: {}".format(start_row))
             start_row -= 1
             cell = pays.cell(row=start_row, column=curr_col)
         
