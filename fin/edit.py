@@ -23,7 +23,8 @@ def correct_table(ws):
                 except:
                     pass
             adjusted_width = (max_length + 2) * 1.2
-            ws.column_dimensions[column].width = adjusted_width
+            # TODO: Тут выдаёт ошибку (
+            # ws.column_dimensions[column].width = adjusted_width
 
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 spec = ['name', 'cost', 'general cost']
