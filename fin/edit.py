@@ -112,11 +112,18 @@ for arg in sys.argv:
                 )
 
         cell = pays.cell(row=check_row, column=1)
+        while not cell.value:
+            check_row -= 1
+            cell = pays.cell(row=check_row, column=1)
+        not_empty_row = check_row
+
         while '*' in str(cell.value):
             check_row -= 1
             cell = pays.cell(row=check_row, column=1)
 
+        date_row = check_row
         cell_date = str(cell.value)
+
 
         cell_past_date = datetime(
             year=int(cell_date.split('/')[-1]),
@@ -131,12 +138,12 @@ for arg in sys.argv:
             date_row = check_row
         else:
             # Have to move to another date
-            start_row = len(col) + 1
+            start_row = not_empty_row + 1
             # Type there date
             pays.cell(
                 row=start_row, 
                 column=1, 
-                value="{}/{}/{}".format(future_date.day, future_date.month, future_date.year)
+                value="{}/{}/{}".format(past_date.day, past_date.month, past_date.year)
                 )
             date_row = start_row
 
