@@ -1,0 +1,52 @@
+tmux:{
+    --b4 all commands <C-b>--
+    
+    pane {
+        % open pane horizontally
+        " open pane vertically
+        ; move to previous active pane
+        o next pane in the current window
+        x kill current pane
+
+        { swap current pane with the previous pane
+        } swap current pane with the next pane
+
+        {arrows} change to the pane above/below, to the left/right
+
+        {C-arrows} resize the current pane
+    }
+
+    window {
+        c create new window
+        [0..9] select window
+        l move to previously selected window
+        n change to the next window
+        f search for text in open windows
+
+        & kill the current window
+    }
+
+    $ kill the current session
+
+    Nerd Tree {
+        <C-t> focus on nerd tree
+        <C-w-w> focus on vim
+        gt next tab
+        gT previous tab
+    }
+
+    tcomment {
+        :gc comment
+    }
+
+    make buffer region {
+        :NR
+    }
+
+    allign {
+        [v,ga]ip[ga,][number of occurences]<symbol>[start]
+            Visual select Inner Paragraph => start easyalign command (ga)
+            Start UasyAlign command (ga) for Inner Paragraph
+    }
+
+
