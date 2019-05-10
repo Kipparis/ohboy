@@ -29,14 +29,17 @@ tmux:{
     $ kill the current session
 
     Nerd Tree {
-        <C-t> focus on nerd tree
+        <F2> focus on nerd tree
         <C-w-w> focus on vim
         gt next tab
         gT previous tab
+        m  - add child
     }
 
     tcomment {
         :gc comment
+        :g<
+        :g>
     }
 
     make buffer region {
@@ -50,3 +53,6 @@ tmux:{
     }
 
 
+code {
+    scoccount <directoryname> -- count lines in direcoty
+}
