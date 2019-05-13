@@ -1,3 +1,6 @@
-sup -- eat or buy imideatly to be more healthy
-no -- something i dont want to buy
-conc -- pens, notebooks etc
+sup    -- eat or buy imideatly to be more healthy
+chill  -- buy something with friend that aren't unhealthy
+no     -- something i dont want to buy
+conc   -- pens, notebooks etc
+phone  -- my telephone
+office -- pens, workbooks etc
