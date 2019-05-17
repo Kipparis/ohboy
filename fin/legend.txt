@@ -4,3 +4,4 @@ no     -- something i dont want to buy
 conc   -- pens, notebooks etc
 phone  -- my telephone
 office -- pens, workbooks etc
+me     -- investing in me (vus things)
