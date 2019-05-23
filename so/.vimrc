@@ -267,3 +267,6 @@ au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
 
 " Transparent background on startup
 " autocmd VimEnter * SeiyaEnable"
+
+
+syntax on
