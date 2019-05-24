@@ -248,6 +248,9 @@ let g:closetag_close_shortcut = '<leader>>'
 au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
 
 
+let g:clang_library_path = '/usr/lib/'
+
+
 " set cmdheight=2 " for echodoc
 
 
