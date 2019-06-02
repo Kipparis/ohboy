@@ -98,5 +98,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# for ranger
 export EDITOR=vim
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+
+# automatic aftorisation for ssh
+    # mkdir ~/.ssh
+    # ssh-keygen -t rsa -q -N '' -f ~/.ssh/id_rsa
+    # ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.org.ua
+    # ssh user@remoute.org.ua
+
+C_TEMPLATES_PATH="$HOME/files/vus/cs/templates"

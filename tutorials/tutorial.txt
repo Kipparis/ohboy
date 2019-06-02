@@ -69,4 +69,11 @@ i3 {
 
     mod + 0 - exit
     mod + sh + h - help
+
+    mod + m - hide status bar
+
+    how to know which class? 
+    > xprop 
 }
+
+

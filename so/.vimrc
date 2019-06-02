@@ -165,8 +165,8 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
 " Nerd Tree
-map <A-t> :NERDTreeToggle<CR>
-map <C-t> :NERDTreeFocus<CR> 
+map <C-n> :NERDTreeToggle<CR>
+" map <F2> : NERDTreeFocus<CR> 
 " autoclose when only tree open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeDirArrowExpandable = '▸'
