@@ -186,6 +186,8 @@ assign [class="TelegramDesktop"] $ws7
 assign [class="Slack"] $ws7
 assign [class="Franz"] $ws7
 
+assign [class="main.py"] $ws3
+
 exec --no-startup-id franz
 exec --no-startup-id i3-msg 'workspace 8; exec chromium https://music.youtube.com/; workspace 1'
 
