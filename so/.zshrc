@@ -109,3 +109,9 @@ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
     # ssh user@remoute.org.ua
 
 C_TEMPLATES_PATH="$HOME/files/vus/cs/templates"
+
+
+# Wacom aliases
+# TODO: move to script with calculating ratio
+alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-I-1'   
+alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-D-1'   
