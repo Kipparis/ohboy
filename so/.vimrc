@@ -26,10 +26,10 @@ Plugin 'vim-scripts/L9'
 
 "colorscheme
 Plugin 'morhetz/gruvbox' " warn
-Plugin 'tlhr/anderson.vim'
+" Plugin 'tlhr/anderson.vim'
 
 " transparent background 
-Plugin 'miyakogi/seiya.vim'
+" Plugin 'miyakogi/seiya.vim'
 
 " autoclosing brackets
 Plugin 'Raimondi/delimitMate'
@@ -58,7 +58,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " python autocomplite
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 
 " folder tree
 Plugin 'scrooloose/nerdtree'
@@ -81,10 +81,10 @@ Plugin 'alvan/vim-closetag'
 set omnifunc=csscomplete#CompleteCSS
 
 " nav between tmux panes and vim panes
-Plugin 'christoomey/vim-tmux-navigator'
+" Plugin 'christoomey/vim-tmux-navigator'
 
 " autocomplet
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 
 " c complete
 Plugin 'Rip-Rip/clang_complete'
@@ -93,10 +93,15 @@ let g:clang_library_path='/usr/lib/llvm-7/lib/libclang-7.so.1'
 " auto show suggestions
 " Plugin 'tonybyrne/AutoComplPop' " weak
 " Plugin 'rdolgushin/snipMate-acp'
-Plugin 'dirkwallenstein/vim-autocomplpop'
+
+
+
+
+" uncomment when make it faster
+" Plugin 'dirkwallenstein/vim-autocomplpop'
+
 " let g:acp_colorForward='#ffffff'
 " let g:acp_colorReverse="#000000"
-" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-g>u\<Tab>"
 
 
 " show vim autocomple
@@ -235,14 +240,6 @@ let g:closetag_regions = {
     \ 'javascript.jsx': 'jsxRegion',
     \ }
 
-"             " Shortcut for closing tags, default is '>'
-"             "
-let g:closetag_shortcut = '>'
-"
-"             " Add > at current position without closing the current tag,
-"             default is ''
-"             "
-let g:closetag_close_shortcut = '<leader>>'
 
 " do not break with delimitMate
 au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
