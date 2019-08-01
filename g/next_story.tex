@@ -1,0 +1,346 @@
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{exscale,latexsym,makeidx}
+
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% for indenting first line in section
+\usepackage{indentfirst}
+
+\author{Me}
+\title{building myself}
+\frenchspacing
+
+\begin{document}
+\maketitle \tableofcontents
+\newpage
+
+\section{09.07.19}
+\begin{center}
+    \large Python
+\end{center}
+Today I learned how to \textbf{save} and \textbf{load} custom data type and way to store images.\\
+Best practice is to place on first line assert line, then check passed values after: 
+\begin{center}
+    \begin{tabular}[t]{c | c | c}
+        set failsafe values & raise an exception & leave as it is
+    \end{tabular}
+\end{center}
+Learned the way to \textbf{unimplement} methods from class. 
+Do it by raise Not\-Imp\-lement ( and hence TypeError or NotImplementError ) 
+
+\begin{center}
+    \large Latex 
+\end{center}
+Learned how to make table and floating objects.
+
+
+\newpage
+\section{10.07.19}
+\begin{center}
+    \large \textbf{Django}
+\end{center}
+Woke up as always, with dailty dozen and cold shower.\\
+Then I knew how django rest api works:
+\begin{itemize}
+    \item{define model}
+    \item{define serializer}
+    \item{define use of serializer to show views}
+    \item{make frontend use this data}
+\end{itemize}
+Most popular use: django $+$ react\\
+How to wrap development and production of project.\\
+All you need to do is: 
+\begin{enumerate}
+    \item{make bare repo}
+    \item{clone it somewhere}
+    \item{split settings (import with try catch)}
+    \item{make Makefile for applying settings}
+    \item{make post commit hook to restart server (for push fuctionality)}
+\end{enumerate}
+
+\begin{center}
+    \large \textbf{Network}
+\end{center}
+Important to \textbf{understand what feels your companion}. Dialog is not about to insert your opinion.
+You should feel the moment when insert a joke, or support morally, agree etc.\\
+If it's your first meet, you may \textbf{show your insecurity}, show that companion can trust you.
+
+\begin{center}
+    \large \textbf{Javascript}
+\end{center}
+When js interpolates string, it goes left-to-right so result of next:
+\begin{center}
+    2 + 3 + "\ hi there " + 2 + 3
+\end{center}
+would be:
+\begin{center}
+    "5 hi there 23"
+\end{center}
+
+\newpage
+\section{13.07.19}
+
+\begin{center}
+    \large \textbf{English}
+\end{center}
+For \textbf{pronouncing} best method for learning is shadow read. It's consists of:
+\begin{enumerate}
+    \item{Listening text}
+    \item{Reading text}
+    \item{Recording yourself}
+    \item{Compare your pronouncing with author's}
+\end{enumerate}
+Another \textbf{common advices} for right pronouncing:
+\begin{itemize}
+    \item{not clean p,t,k but with noize}
+    \item{v read as rus в, w read as rus уо (with opening mouth)}
+    \item{th read with tongue between teeth}
+    \item{ya instead of you}
+\end{itemize}
+
+\begin{center}
+    \large \textbf{My}
+\end{center}
+Today made video about how to make vimtex setup for Latex development (on russian) becouse it doesn't exists yet.
+Made a video how I drink shots.
+
+\begin{center}
+    \large \textbf{Django}
+\end{center}
+Finally install all dependencies and freeze it all, so its left to setup hooks and Makefile. \\
+Afterwards I will make cleaner registering and personal area.
+
+\newpage
+\section{14.07.19}
+
+\begin{center}
+    \large \textbf{My}
+\end{center}
+Edit and post video about vimtex.\\
+Thought that if I'll play dota 2, I would relax, but I wasted my time and didn't relax at all (4 games and only 1 win)\\
+Structured notes in evernote.
+
+\begin{center}
+    \large \textbf{AI}
+\end{center}
+I had knew that to begin work with neural networks on c++ I have to know basics on python.\\
+So I started to read book on DL on python.
+
+\begin{center}
+    \large \textbf{c++}
+\end{center}
+Nothing new.\\Last thing I read is about variable in scopes. So maybe I will skip some info.
+
+\newpage
+\section{15.07.19}
+
+\begin{center}
+    \large \textbf{Deep Learning}
+\end{center}
+I spent all day reading about neural networks. Now I understand how error is passed throw the neurons, how gradient descent works (and how I get to this).\\
+Learned about:
+\begin{itemize}
+    \item{Matrixes}
+    \item{Signals}
+    \item{Values}
+    \item{Error functions and gradient}
+\end{itemize}
+Knew that for beginners it's better to do ml and dl on python (becouse of speed of developing cycle), but when you got complite model, you may need to rewrite it on c++ for execution speed.
+
+\begin{center}
+    \large \textbf{Me}
+\end{center}
+Watched 2 series of adventure time for right pronounciation.
+
+\newpage
+\section{18.07.19}
+\begin{center}
+    \large \textbf{Deep Learning}
+\end{center}
+
+Made first neural network that recognizes numbers on 28 x 28 pic.
+
+Learned about 
+\begin{itemize}
+    \item RNN (one input is nn on previous step like short term me\-mory)
+    \item how translate different facts of world to neural network
+\end{itemize} 
+
+Knew about parameters of nn and how they affect. Like:
+\begin{itemize}
+    \item learning rate
+    \item epoch num
+    \item hidden layers num
+    \item neurons for each hidden layer
+\end{itemize}
+
+Knew that I can change \textbf{activation function} to tanit and set -1 and 1.
+
+\begin{center}
+    \large \textbf{pwn}
+\end{center}
+
+Set up full \textbf{django push/deployment} script:
+
+Onpush in automatically fetch changes to folder con\-ta\-ining si\-te so I don't ne\-ed to do enything except pushing changes to server (full local deve\-lop\-ment)
+
+Nice collecting of staticfiles (even of base)
+
+\textbf{Solved problem} with device width (very simple just set view\-port in base.html)
+
+\newpage
+\section{19.07.19}
+\begin{center}
+    \large \textbf{AI}
+\end{center}
+
+Today learned about tools that help to faster write AI bot for game (some of them are geneariled):
+\begin{itemize}
+    \item visualize - modify your environment to show how your bot takes desi\-cions
+    \item move classes from previous project
+    \item learn graph theory
+    \item in last time check for other peoples' solutions and add if's to your code
+\end{itemize}
+
+My suggestions:
+\begin{itemize}
+    \item make fast template on python and improve in on c++
+    \item use apropriate model (previous item)
+\end{itemize}
+
+New types AI that I learned:
+\begin{enumerate}
+    \item search algorithm - minimax --- MCTS
+    \item local arena - fight against yourself
+    \item see throw 50-100 most nearest actions and choose the best (first for enemy than for yourself)
+    \item in case of use nn, make many simulations
+\end{enumerate}
+
+\begin{center}
+    \large \textbf{pwn}
+\end{center}
+
+Developing own css for header.
+
+Current plan is:
+\begin{enumerate}
+    \item make front page for desktop/tablet/phones and simple test within it
+    \item registration throw all social media
+    \item own area
+    \item all for now, later see better
+\end{enumerate}
+
+\newpage
+\section{20.07.19}
+\begin{center}
+    \large \textbf{dev tools}
+\end{center}
+
+Tune "go to definition" shortcut and start to learn vimtutor.
+
+\newpage
+\section{23.07.19}
+
+I \textbf{realy} tired so here will be just few words about today.
+\begin{center}
+    \large \textbf{AI}
+\end{center}
+
+Learned how decrease dimension of data with math.
+
+Started learning about probability theory and information theory. Ended on entropy.
+
+Many new words and hard to realize them all in mind. But it's ok.
+
+\begin{center}
+    \large \textbf{me}
+\end{center}
+
+If you ignore people's q "why do I need it?", they'll ignore you.
+
+\begin{center}
+    \large \textbf{c++}
+\end{center}
+
+const, constexpr keyword - easy peasy
+
+using, auto, decltype - same
+
+started struct.
+
+\newpage
+\section{24.07.19}
+\begin{center}
+    \large \textbf{my}
+\end{center}
+
+\textbf{Best task strategy} - 45 min work - 15 min chill 
+
+To best way to talk to other - tell only truth, be self confident, be lovely and friendly. Don't
+be pussy and always hold your word. \textbf{Big impact} brings your voice:
+\begin{itemize}
+    \item make your voice more like "from bottom" it will cause the trust.
+    \item don't let you sound boring: change pitch, tembr, rhime etc.
+\end{itemize}
+
+Make exersizes with your voice before important shows.
+
+\begin{center}
+    \large \textbf{c++}
+\end{center}
+
+\begin{itemize}
+    \item struct
+    \item while with cin and getline
+    \item for (:) easy
+    \item string shit like string::size\_type for storing size of string. also learned about how works conc strings
+\end{itemize}
+
+\newpage
+\section{25.07.19}
+
+\begin{center}
+  \large \textbf{c++}
+\end{center}
+
+vector, iterators and operations on them
+
+\begin{center}
+  \large \textbf{pwn}
+\end{center}
+
+best practices in crawdfounding, mistakes, advantages, disadvantages all in evernote.
+How to talk to other people and represent yourself. Be in theme.
+
+\newpage
+\section{26.07.19}
+
+\begin{center}
+  \large \textbf{me}
+\end{center}
+
+When talking be loud and self confident. Let your speak be as strong and you are.
+
+When you're assure someone use one of this tools:
+\begin{itemize}
+  \item compare what person already knows
+  \item look at him and show you know what you're talking about
+  \item eye contact
+  \item tell him what he understand
+\end{itemize}
+
+Started reading Aristotel. He tells about how speakers, judges and obser\-vers behave. Tells that \textbf{word} is a root of all tasks. You won't rich something really important (no matter how good you are) if you bad at convintion. Tell lots about lows, different roots of science and speaking, different goals for all peoples ( you won't agree that you were wrong is that were part of your work ). Define healthy status for people of all ages.\\
+Well it's interesting. Goin' to read tomorrow.
+
+\begin{center}
+  \large \textbf{c++}
+\end{center}
+
+arrays and pointers to arrays. not hard at all, just refresh memory.
+
+
+\end{document}

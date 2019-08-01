@@ -76,4 +76,26 @@ i3 {
     > xprop 
 }
 
+vim {
+    C+o - go to previous position - helpful when got to definition or something else
+    G   - end of file
+    gg  - start of file
+}
 
+snippets {
+    :UltiSnipsEdit - edit snippets for this particular filetype
+    :tabedit ~/.vim/Ultisnips/all.snippets 
+    :tab h UltiSni<tab>
+    # - comment
+}
+
+mappings {
+    gc or gcc (for line)
+    ga<symbol> - allign by symbol
+    C+d - go to definition
+
+    C+t - open tree
+    S+t - open file in new tab
+
+    C+p - search for something
+}

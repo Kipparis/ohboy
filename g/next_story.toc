@@ -1,0 +1,13 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}09.07.19}{2}% 
+\contentsline {section}{\numberline {2}10.07.19}{3}% 
+\contentsline {section}{\numberline {3}13.07.19}{4}% 
+\contentsline {section}{\numberline {4}14.07.19}{5}% 
+\contentsline {section}{\numberline {5}15.07.19}{6}% 
+\contentsline {section}{\numberline {6}18.07.19}{7}% 
+\contentsline {section}{\numberline {7}19.07.19}{8}% 
+\contentsline {section}{\numberline {8}20.07.19}{9}% 
+\contentsline {section}{\numberline {9}23.07.19}{10}% 
+\contentsline {section}{\numberline {10}24.07.19}{11}% 
+\contentsline {section}{\numberline {11}25.07.19}{12}% 
+\contentsline {section}{\numberline {12}26.07.19}{13}% 

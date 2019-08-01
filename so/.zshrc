@@ -115,3 +115,29 @@ C_TEMPLATES_PATH="$HOME/files/vus/cs/templates"
 # TODO: move to script with calculating ratio
 alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-I-1'   
 alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-D-1'   
+
+
+# system aliases
+alias turn_off_bell='xset -b'
+alias set_local_time='sudo ntpd -qg'
+
+
+# COLORS FOR NTFS FILES
+
+# enable color support of ls and also add handy aliases
+if [ "$TERM" != "dumb" ]; then
+    eval "`dircolors ~/.mydircolors`"
+    alias ls='ls --color=auto'
+    #alias dir='ls --color=auto --format=vertical'
+    #alias vdir='ls --color=auto --format=long'
+fi
+
+alias fix_time='timedatectl set-ntp true'
+
+alias video_recorder="simplescreenrecorder"
+alias show_keys="screenkey" # --scr 1 for showing on big screen
+
+alias remove_cached='git rm -r --cached .'
+# git add .
+# git commit -m ".gitignore fix"
+
