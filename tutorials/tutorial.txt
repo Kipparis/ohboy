@@ -148,8 +148,8 @@ vim {
     vimagit {
       :Magit - opens magit
       C+n - jump to next hunk
-      s - stage or unstage hunk 
-      cc - commit; then in normal mode "cc" or ":w"
+      S - stage or unstage hunk 
+      CC - commit; then in normal mode "cc" or ":w"
     }
 
     Nerd Tree {
