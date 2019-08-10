@@ -69,6 +69,10 @@ vim {
 
   C+w + C+w - move btw windows
 
+  v - visual mode
+  C+v - block visual mode
+  V - select lines
+
   help {
     next read - :help user-manual
     book - Vim - Vi IMproved - by Steve Oulline
@@ -106,6 +110,48 @@ vim {
       g? - list of mappings
     }
 
+    vim-gitgutter {
+      [c,]c - move between hunks
+      <leader>hp - preview
+      <leader>hs - stage
+      <leader>hu - undo
+
+      ic - operates on all lines in the current hunk
+      ac - --//-- and trailing empty lines
+
+      zr - to unfold 3 lines above and below a hunk
+      or GitGutterFold
+
+      :GitGutterLineHighlightsToggle - toggle line highligning
+      
+      g:gitgutter_preview_win_location - location of the preview window
+    }
+
+    gv.vim {
+      :GV - open commit browser
+        pass git log oprions to the command, e.g. :GV -S foobar
+      :GV! - only list commits that affected the current file
+      :GV? - fills the locations list with the revisions of the current
+              file
+      :GV or :GV? used in visual mode to track the changes in the
+              selected lines
+
+      o - on commit to display content
+      o - on commits to display the diff in the range
+      O - opens a new tab instead
+      gv == :Gbrowse
+      ]], [[ to move between commits
+      . - start command-line with :Git [CURSOR] SHA a la fugitive
+      q - close
+    }
+
+    vimagit {
+      :Magit - opens magit
+      C+n - jump to next hunk
+      s - stage or unstage hunk 
+      cc - commit; then in normal mode "cc" or ":w"
+    }
+
     Nerd Tree {
       <F2> focus on nerd tree
       <C-w-w> focus on vim
@@ -133,22 +179,24 @@ vim {
 }
 
 snippets {
-    :UltiSnipsEdit - edit snippets for this particular filetype
-    :tabedit ~/.vim/Ultisnips/all.snippets 
-    :tab h UltiSni<tab>
-    # - comment
+  :UltiSnipsEdit - edit snippets for this particular filetype
+  :tabedit ~/.vim/Ultisnips/all.snippets 
+  :tab h UltiSni<tab>
+  # - comment
 }
 
 mappings {
-    gc or gcc (for line)
-    ga<symbol> - allign by symbol
-    C+d - go to definition
+  gc or gcc (for line)
+  ga<symbol> - allign by symbol
+  C+d - go to definition
 
-    C+t - open tree
-    S+t - open file in new tab
+  C+t - open tree
+  S+t - open file in new tab
 
-    C+p - search for something
+  C+p - search for something
 }
+
+* add comething here
 
 git {
   git add [--patch,-p] <filename> -- add only part of specified filename
