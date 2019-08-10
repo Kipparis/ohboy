@@ -1,85 +1,135 @@
 tmux:{
-    --b4 all commands <C-b>--
-    
-    pane {
-        % open pane horizontally
-        " open pane vertically
-        ; move to previous active pane
-        o next pane in the current window
-        x kill current pane
+  --b4 all commands <C-b>--
+  
+  pane {
+    % open pane horizontally
+    " open pane vertically
+    ; move to previous active pane
+    o next pane in the current window
+    x kill current pane
 
-        { swap current pane with the previous pane
-        } swap current pane with the next pane
+    { swap current pane with the previous pane
+    } swap current pane with the next pane
 
-        {arrows} change to the pane above/below, to the left/right
+    {arrows} change to the pane above/below, to the left/right
 
-        {C-arrows} resize the current pane
-    }
+    {C-arrows} resize the current pane
+  }
 
-    window {
-        c create new window
-        [0..9] select window
-        l move to previously selected window
-        n change to the next window
-        f search for text in open windows
+  window {
+    c create new window
+    [0..9] select window
+    l move to previously selected window
+    n change to the next window
+    f search for text in open windows
 
-        & kill the current window
-    }
+    & kill the current window
+  }
 
-    $ kill the current session
-
-    Nerd Tree {
-        <F2> focus on nerd tree
-        <C-w-w> focus on vim
-        gt next tab
-        gT previous tab
-        m  - add child
-    }
-
-    tcomment {
-        :gc comment
-        :g<
-        :g>
-    }
-
-    make buffer region {
-        :NR
-    }
-
-    allign {
-        [v,ga]ip[ga,][number of occurences]<symbol>[start]
-            Visual select Inner Paragraph => start easyalign command (ga)
-            Start UasyAlign command (ga) for Inner Paragraph
-    }
-
+  $ kill the current session
+}
 
 code {
-    scoccount <directoryname> -- count lines in direcoty
+  scoccount <directoryname> -- count lines in direcoty
 }
 
 i3 {
-    mod + enter - open terminal
-    mod + sh + q - kill active
-    mod + F2 - browser
-    mod + d - top menu
-    mod + sh + b - back menu
-    mod + z - top programm menu
-    mod + 1-9 - go to workspace
-    mod + ct + 1-9 - send to workspace
+  mod + enter - open terminal
+  mod + sh + q - kill active
+  mod + F2 - browser
+  mod + d - top menu
+  mod + sh + b - back menu
+  mod + z - top programm menu
+  mod + 1-9 - go to workspace
+  mod + ct + 1-9 - send to workspace
 
-    mod + 0 - exit
-    mod + sh + h - help
+  mod + 0 - exit
+  mod + sh + h - help
 
-    mod + m - hide status bar
+  mod + m - hide status bar
 
-    how to know which class? 
-    > xprop 
+  how to know which class? 
+  > xprop 
 }
 
 vim {
-    C+o - go to previous position - helpful when got to definition or something else
-    G   - end of file
-    gg  - start of file
+  C+o - go to previous position - helpful when got to definition or something else
+  C+i - got to newer position
+  G   - end of file
+  gg  - start of file
+
+  :so % - source current file
+
+  n - search forward
+  N - search backward
+
+  /ignore\c - ignore case for that search
+
+  :set xxx - sets the option "xxx"
+
+  C+w + C+w - move btw windows
+
+  help {
+    next read - :help user-manual
+    book - Vim - Vi IMproved - by Steve Oulline
+    how to build vimrc - :help virc-intro
+  }
+
+  pluggins {
+    vim-fugitive {
+      :G :Gstatus - git status
+      :Gedit - view any blob, tree, commit, or tag (:Gsplit, :Gvsplit,
+                                                    :Gtbedit)
+      :Gdiffsplit - bring up the staged vesion of the file side by side
+        with the working tree version and use Vim's diff handling
+        capabilities to stage a subset of the file's changes
+      )
+      :Gcommit
+      :Gmerge
+      :Grebase
+      :Gpush
+      :Gfetch
+      :Gpull
+      :Gblame
+      :Gmove 
+      :Gdelete
+      :Ggrep - search the work tree (or any arbitrary commit)
+      :Glog - loads all previous revisions of a file into the quickfix
+        list
+      :Gread == git checkout -- filename that operates on the buffer 
+      :Gwrite == git add when called from work tree file and
+              == git checkout when caled from the index or blob in hist
+
+      :Git for running any arbitrary command
+      :Git! to pen the output of a command in a temp file
+
+      g? - list of mappings
+    }
+
+    Nerd Tree {
+      <F2> focus on nerd tree
+      <C-w-w> focus on vim
+      gt next tab
+      gT previous tab
+      m  - add child
+    }
+
+    tcomment {
+      :gc comment
+      :g<
+      :g>
+    }
+
+    make buffer region {
+      :NR
+    }
+
+    allign {
+      [v,ga]ip[ga,][number of occurences]<symbol>[start]
+        Visual select Inner Paragraph => start easyalign command (ga)
+        Start UasyAlign command (ga) for Inner Paragraph
+    }
+  }
 }
 
 snippets {
@@ -98,4 +148,8 @@ mappings {
     S+t - open file in new tab
 
     C+p - search for something
+}
+
+git {
+  git add [--patch,-p] <filename> -- add only part of specified filename
 }
