@@ -99,8 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # for ranger
-export EDITOR=vim
-VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+export EDITOR=nvim
+VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
 
 # automatic aftorisation for ssh
     # mkdir ~/.ssh
@@ -113,8 +113,10 @@ C_TEMPLATES_PATH="$HOME/files/vus/cs/templates"
 
 # Wacom aliases
 # TODO: move to script with calculating ratio
-alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-I-1'   
-alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-D-1'   
+alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" 
+  MapToOutput DVI-I-1'   
+alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" 
+  MapToOutput DVI-D-1'   
 
 
 # system aliases
@@ -141,3 +143,6 @@ alias remove_cached='git rm -r --cached .'
 # git add .
 # git commit -m ".gitignore fix"
 
+# midi synth alias sound="qsynth"
+
+alias config_nvim='nvim ~/.config/nvim/init.vim'
