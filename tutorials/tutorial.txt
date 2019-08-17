@@ -73,6 +73,8 @@ vim {
   C+v - block visual mode
   V - select lines
 
+  :verbose imap <Tab> -- see which plugin is overriding your map
+
   help {
     next read - :help user-manual
     book - Vim - Vi IMproved - by Steve Oulline
