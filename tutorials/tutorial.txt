@@ -74,6 +74,7 @@ vim {
   V - select lines
 
   :verbose imap <Tab> -- see which plugin is overriding your map
+  gx - open link under cursor
 
   help {
     next read - :help user-manual
@@ -82,6 +83,13 @@ vim {
   }
 
   pluggins {
+    snippets {
+      :UltiSnipsEdit - edit snippets for this particular filetype
+      :tabedit ~/.vim/Ultisnips/all.snippets 
+      :tab h UltiSni<tab>
+      # - comment
+    }
+
     vim-fugitive {
       :G :Gstatus - git status
       :Gedit - view any blob, tree, commit, or tag (:Gsplit, :Gvsplit,
@@ -180,12 +188,6 @@ vim {
   }
 }
 
-snippets {
-  :UltiSnipsEdit - edit snippets for this particular filetype
-  :tabedit ~/.vim/Ultisnips/all.snippets 
-  :tab h UltiSni<tab>
-  # - comment
-}
 
 mappings {
   gc or gcc (for line)

@@ -113,10 +113,11 @@ C_TEMPLATES_PATH="$HOME/files/vus/cs/templates"
 
 # Wacom aliases
 # TODO: move to script with calculating ratio
-alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" 
-  MapToOutput DVI-I-1'   
-alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" 
-  MapToOutput DVI-D-1'   
+# xrandr
+alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" \
+  MapToOutput HEAD-0'   
+alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" \
+  MapToOutput HEAD-1'
 
 
 # system aliases
@@ -146,3 +147,30 @@ alias remove_cached='git rm -r --cached .'
 # midi synth alias sound="qsynth"
 
 alias config_nvim='nvim ~/.config/nvim/init.vim'
+
+
+# check for RAM (system lag while several applications are opened)
+# free -h
+#
+# slow boot time or application first time launch
+# hdparm -t /deb/sdX
+#
+# CPU load is hign even with enough RAM available =>
+# disable running daemons and/or processes
+# htop
+# pstree
+# or another system monitoring tool
+#
+# direct rendering are slow (GPU part)
+# check if direct rendering enabled:
+# glxinfo | grep "direct rendering"
+#
+# check for drivers
+# lspci -v
+# lspci -k | grep -A 2 -E "(VGA|3D)"
+#
+# header number
+# uname -r
+#
+# blacklist old GPU driver (open source)
+# sudo nvim /etc/modprobe.d/nouveau_blacklist.conf  
