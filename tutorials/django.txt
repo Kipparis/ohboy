@@ -180,11 +180,59 @@ Testing:
 
   from django.test import Client
   client = Client()
+  django.test.Client arguments:
+    enforce_csrf_checks - True or False
+    HTTP_USER_AGENT
+    json_encoder
+    secure - True or False - emulate HTTPS request
+    
   methods:
     get - return response from given url
+    post
+    <other modifications>
+    login
+    force_login - simulate the affect of a user logging into the site
+    logout
+
+  get:
+    extra parameters in get should follow CGI specification
+    follow - follow any redirect
+
+  post:
+    to upload a file use:
+      c = Client()
+      with open('file.doc') as f:
+        c.post("/rand/url/", {'name': 'fred', 'attachment': f})
+    or provide file-like object
+
+  login:
+    creditials argument depends on authentication backend 
+      default - login, password. but  see authenticate() method
+
+    
+    returns True if credintials were accepted and login was successful
+
+  b4 testing login u need to create users:
+    create_user() function will help
+
 
   response:
+    client
+
+    content(as bytestring)
+    context - get context values using []
+    json - the body of the response parsed as JSON, extra arguments are
+      passed to json.loads()
+
+    request
+    templates - user template.name to get template's file name
+
+    resolver_match - check that correct class based view was rendered
+
     status_code
+    redirect_chain
+
+    user dictionary syntax on the response object to get HTTP headers
 
   django integration with selenium = LiveServerTestCase
 
@@ -231,3 +279,7 @@ Testing:
   class TestCase:
     methods:
       setUp(self): -- what done b4 testing
+
+
+хочешь что-то сделать по ссш, как варик - законнектить систему, сделать
+над ней все операции, и анмаунтить её.
