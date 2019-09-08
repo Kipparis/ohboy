@@ -175,3 +175,6 @@ alias config_nvim='nvim ~/.config/nvim/init.vim'
 #
 # blacklist old GPU driver (open source)
 # sudo nvim /etc/modprobe.d/nouveau_blacklist.conf  
+
+alias cd_lt="cd ~/files/proj/nextgen/levelteleg && source venv/bin/activate && cd base"
+

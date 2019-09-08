@@ -241,6 +241,24 @@ Testing:
     assertContains
     assertQuerysetEqual
 
+  options:
+    --pattern="test_*.py" -- your own pattern for searching tests
+    --failfast -- exit after first failed test
+    --keepdb -- preserbe the test database from being destoyed between
+      runs
+    --noinput -- automatically destroy database on next start
+
+      --parallel (if tests are properly isolated) - run tests in
+        parallel
+
+  exceptions:
+    try ... except block or assertRaises()
+
+  cookies:
+    Client.cookies - SimpleCookie object
+    documentation:
+    https://docs.python.org/3/library/http.cookies.html#module-http.cookies
+
   good practive for writing tests:
     separate TestClass for each model or view
     separate test method for each set of conditions you want to test
@@ -249,15 +267,6 @@ Testing:
     run with python-warnings enabled:
     python -Wa manage.py test
 
-    options:
-      --pattern="test_*.py" -- your own pattern for searching tests
-      --failfast -- exit after first failed test
-      --keepdb -- preserbe the test database from being destoyed between
-        runs
-      --noinput -- automatically destroy database on next start
-
-      --parallel (if tests are properly isolated) - run tests in
-        parallel
 
 
     DEBUG=False be always
@@ -279,6 +288,10 @@ Testing:
   class TestCase:
     methods:
       setUp(self): -- what done b4 testing
+
+  
+  templates:
+    {{ block.super }} to add content of parent template
 
 
 хочешь что-то сделать по ссш, как варик - законнектить систему, сделать

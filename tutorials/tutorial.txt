@@ -79,7 +79,7 @@ vim {
   help {
     next read - :help user-manual
     book - Vim - Vi IMproved - by Steve Oulline
-    how to build vimrc - :help virc-intro
+    how to build vimrc - :help vimrc-intro
   }
 
   pluggins {
@@ -88,6 +88,14 @@ vim {
       :tabedit ~/.vim/Ultisnips/all.snippets 
       :tab h UltiSni<tab>
       # - comment
+
+      syntax:
+        snippet _name_ "_description_" _options_
+        _what are typed_
+        endsnippet
+
+        ${1:default_value}
+        $0 - where you will at the end
     }
 
     vim-fugitive {
