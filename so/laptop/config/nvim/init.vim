@@ -14,7 +14,6 @@ source ~/.config/nvim/pluggins.vim
 
 
 
-
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
@@ -144,6 +143,10 @@ au BufNewFile,BufRead *.js, *.html, *.css
   \ set softtabstop=2 |
   \ set shiftwidth=2
 
+au BufNewFile,BufRead *.cpp *.hpp *.tpp
+  \ set tabstop=2 |
+  \ set softtabstop=2 |
+  \ set shiftwidth=2
 
 
 " ycm config
