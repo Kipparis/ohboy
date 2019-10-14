@@ -120,6 +120,16 @@ au BufNewFile,BufRead *.py
   \ set autoindent |
   \ set fileformat=unix
 
+" python development
+au BufNewFile,BufRead *.hpp,*.cpp,*.tpp
+  \ set tabstop=4 |
+  \ set softtabstop=4 |
+  \ set shiftwidth=4 |
+  \ set textwidth=79 |
+  \ set expandtab |
+  \ set autoindent |
+  \ set fileformat=unix
+
 " Use the below highlight group when displaying bad whitespace is desired.
 " TODO: fix it
 highlight BadWhitespace ctermbg=red guibg=red
@@ -139,11 +149,6 @@ let g:jedi#force_py_version = '3'
 
 " web development
 au BufNewFile,BufRead *.js, *.html, *.css
-  \ set tabstop=2 |
-  \ set softtabstop=2 |
-  \ set shiftwidth=2
-
-au BufNewFile,BufRead *.cpp *.hpp *.tpp
   \ set tabstop=2 |
   \ set softtabstop=2 |
   \ set shiftwidth=2
@@ -206,5 +211,5 @@ nohlsearch
 nnoremap j gj
 nnoremap k gk
 
-au BufRead,BufNewFile *.pro set filetype=prolog
+autocmd BufRead,BufNewFile *.pro set syntax=prolog
 
