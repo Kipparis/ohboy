@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.19)  27 JUL 2019 02:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.5)  14 OCT 2019 22:28
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **next_story.tex
@@ -39,7 +39,7 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 ) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
- (/usr/share/texmf-dist/tex/latex/base/t2aenc.def
+ (/usr/share/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
@@ -243,7 +243,7 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 Package: babel 2019/04/03 3.29 The Babel package
  (/usr/share/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2019/04/03 3.29 Babel switching mechanism
-) (/usr/share/texmf-dist/tex/latex/base/russianb.ldf
+) (/usr/share/texmf-dist/tex/generic/babel-russian/russianb.ldf
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
  (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/04/03 3.29 Babel common definitions
@@ -320,7 +320,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (./next_story.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
- (/usr/share/texmf-dist/tex/latex/base/t2acmr.fd
+ (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `next_story.aux'.
@@ -363,20 +363,20 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
- [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] (./next_story.aux) ) 
+ [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] (./next_story.aux) ) 
 Here is how much of TeX's memory you used:
- 2496 strings out of 492623
- 28397 string characters out of 6135669
+ 2498 strings out of 492623
+ 28524 string characters out of 6135669
  96119 words of memory out of 5000000
  6383 multiletter control sequences out of 15000+600000
  17962 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,6n,27p,480b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on next_story.pdf (14 pages, 122290 bytes).
+Output written on next_story.pdf (16 pages, 124749 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

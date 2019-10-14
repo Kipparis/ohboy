@@ -11,3 +11,5 @@
 \contentsline {section}{\numberline {10}24.07.19}{11}% 
 \contentsline {section}{\numberline {11}25.07.19}{12}% 
 \contentsline {section}{\numberline {12}26.07.19}{13}% 
+\contentsline {section}{\numberline {13}12.10.19}{14}% 
+\contentsline {section}{\numberline {14}14.10.19}{15}% 
