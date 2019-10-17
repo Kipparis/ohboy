@@ -6,71 +6,71 @@ Plugin 'marcweber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'vim-scripts/L9'
 
-" vanilla Vim
-" hi Pmenu ctermbg=cyan
-
-
-""" PLUGINS
-
-"colorscheme
+" " vanilla Vim
+" " hi Pmenu ctermbg=cyan
+"
+"
+" """ PLUGINS
+"
+" "colorscheme
 Plugin 'morhetz/gruvbox' " warn 
-Plugin 'yorickpeterse/happy_hacking.vim'
-Plugin 'AlessandroYorba/Alduin'
+" Plugin 'yorickpeterse/happy_hacking.vim'
+" Plugin 'AlessandroYorba/Alduin'
 
-" autoclosing brackets
+" " autoclosing brackets
 Plugin 'Raimondi/delimitMate'
 
-" show indent
+" " show indent
 Plugin 'Yggdroot/indentLine'
 
-" align some shit by symbol
-" Plugin 'godlygeek/tabular'
+" " align some shit by symbol
+" " Plugin 'godlygeek/tabular'
 Plugin 'junegunn/vim-easy-align'
 
-" make buffer out of region
+" " make buffer out of region
 Plugin 'chrisbra/NrrwRgn'
 
-" arg wrap ( from raw make many lines )
+" " arg wrap ( from raw make many lines )
 Plugin 'FooSoft/vim-argwrap'
 
 Plugin 'ycm-core/YouCompleteMe'
 
-" snipets for autocomplite
+" " snipets for autocomplite
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
-" python autocomplite
+" " python autocomplite
 Plugin 'davidhalter/jedi-vim'
 
-" folder tree
+" " folder tree
 Plugin 'scrooloose/nerdtree'
 
-" Line in bottob ( or top )
+" " Line in bottob ( or top )
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-" comment region
+" " comment region
 Plugin 'tomtom/tcomment_vim'
 
-" comand history
+" " comand history
 Plugin 'wincent/command-t'
 
 Plugin 'alvan/vim-closetag'
 
-" nav between tmux panes and vim panes
+" " nav between tmux panes and vim panes
 Plugin 'christoomey/vim-tmux-navigator'
 
-" autocomplet
-" Plugin 'ervandew/supertab'
-
-" c complete
-" Plugin 'Rip-Rip/clang_complete'
-" let g:clang_library_path='/usr/lib/llvm-7/lib/libclang-7.so.1'
+" " autocomplet
+" " Plugin 'ervandew/supertab'
+"
+" " c complete
+" " Plugin 'Rip-Rip/clang_complete'
+" " let g:clang_library_path='/usr/lib/llvm-7/lib/libclang-7.so.1'
 
 
 Plugin 'lervag/vimtex'
 
-" folding
+" " folding
 Plugin 'tmhedberg/SimpylFold'
 
 
@@ -80,9 +80,12 @@ Plugin 'plytophogy/vim-virtualenv'
 Plugin 'kien/ctrlp.vim'
 
 
-""" GIT SHIT """
-" git support 
+" """ GIT SHIT """
+" " git support 
+
+" HMMMMMM.... -_-
 Plugin 'tpope/vim-fugitive'
+
 " git diff showing
 Plugin 'airblade/vim-gitgutter'
 " commit viewer
