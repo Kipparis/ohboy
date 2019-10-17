@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1564185408 "next_story.tex" "next_story.pdf" "next_story" 1564185408
+["pdflatex"] 1571026376 "next_story.tex" "next_story.pdf" "next_story" 1571026376
   "/home/kip/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1562708124 3308 eee81981029f67083258db36df06e523 ""
   "/home/kip/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1559992133 3304 6a543c07045572737981351171e0505e ""
   "/home/kip/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1562708123 3312 d199be9bd555944e2403193d58a0256a ""
@@ -67,13 +67,13 @@
   "/usr/share/texmf-dist/tex/latex/base/ulasy.fd" 1557554374 2236 d19fc9d1775d819862989c760289e5a5 ""
   "/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty" 1557554374 1615 dba466e323af4fcd4a6acb87444d96c3 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1557554374 33301 a3134070eacafb10b1f371612ce2650d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1563520136 336744 fd5ac6f874f4d067f6328200f77d57fa ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1563520126 7979416 f468767f0f233a090199ca3f272b35fc ""
-  "next_story.aux" 1564185408 1185 2526db5995d1deb5b1bab6cc2c4461e8 "pdflatex"
-  "next_story.tex" 1564185407 9862 6a63912afe55635fb02289b4af357bf2 ""
-  "next_story.toc" 1564185408 678 9c234b46c559fc80a29205d8d56712ae "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1568203563 336744 fd5ac6f874f4d067f6328200f77d57fa ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1568203555 7979416 f3a6e0cbe6c2df70bcf1c3ade88df4a6 ""
+  "next_story.aux" 1571026376 1372 78c5289b89f0adfb57288a06f90213a2 "pdflatex"
+  "next_story.tex" 1571026375 10914 8c92797fdf47b6ff61d185fc8f4db78c ""
+  "next_story.toc" 1571026376 785 91a20e5cb12aeb1aff384fcc5c9773d1 "pdflatex"
   (generated)
-  "next_story.log"
   "next_story.aux"
+  "next_story.log"
   "next_story.toc"
   "next_story.pdf"
