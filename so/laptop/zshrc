@@ -118,3 +118,6 @@ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 C_TEMPLATES_PATH="$HOME/files/vus/cs/templates"
 alias dev="cd ~/files/proj/nextgen/levelteleg && source venv/bin/activate && cd base"
+
+# rm large files from git 
+# git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch fixtures/11_user_answer.json'
