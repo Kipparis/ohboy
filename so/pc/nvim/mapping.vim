@@ -40,7 +40,12 @@ nnoremap <space> za
 " set mapping for folding docstring
 "
 
+map <leader>cc :!ino build -d /usr/share/arduino10 -m leonardo<CR>
+map <leader>uu :!ino upload -d /usr/share/arduino10 -m leonardo -p /dev/ttyACM0<CR>
+map <leader>ss :!ino serial -p /dev/ttyACM0<CR>
+" map <leader>cc :!ino build -d /usr/share/arduino10<CR>
+" map <leader>uu :!ino upload -d /usr/share/arduino10<CR>
 
-let vim_markdown_preview_hotkey='<C-m>'
-let vim_markdown_preview_browser='chromium'
-let vim_markdown_preview_use_xdg_open=1
+map <leader>p :vsp \| terminal swipl -q %<CR>
+
+nmap <F8> :TagbarToggle<CR>
