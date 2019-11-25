@@ -66,6 +66,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 " c complete
 " Plugin 'Rip-Rip/clang_complete'
 " let g:clang_library_path='/usr/lib/llvm-7/lib/libclang-7.so.1'
+" c c++
+Plugin 'majutsushi/tagbar'
 
 
 Plugin 'lervag/vimtex'
@@ -98,3 +100,8 @@ Plugin 'mjbrownie/vim-htmldjango_omnicomplete'
 " markdown preview
 " Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+
+" Plugin 'tclem/vim-arduino'
+
+" Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'MikeCoder/markdown-preview.vim'

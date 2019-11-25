@@ -67,8 +67,12 @@ set wildignorecase
 
 
 " folding
-set foldmethod=indent " folding by indent
-set foldlevel=99
+" set foldmethod=indent " folding by indent
+" set foldlevel=99
+set foldmethod=marker
+" autocmd FileType python setlocal foldenable foldmethod=syntax
+set foldtext=getline(v:foldstart+1)
+
 
 " copy to normal clipboard
 " set clipboard=unnamed
@@ -110,6 +114,15 @@ let g:closetag_regions = {
 " do not break with delimitMate
 au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
 
+" python development
+au BufNewFile,BufRead *.cpp,*.hpp
+  \ set tabstop=4 |
+  \ set softtabstop=4 |
+  \ set shiftwidth=4 |
+  \ set textwidth=79 |
+  \ set expandtab |
+  \ set autoindent |
+  \ set fileformat=unix
 
 " python development
 au BufNewFile,BufRead *.py
@@ -174,12 +187,10 @@ let g:indentLine_setConceal = 0 " save conceallevel
 
 syntax on
 
+set splitright
 source ~/.config/nvim/mapping.vim
 
 
-" test shit
-" autocmd FileType python setlocal foldenable foldmethod=syntax
-set foldtext=getline(v:foldstart+1)
 
 " GIT
 " more faster update
@@ -202,3 +213,21 @@ nohlsearch
 " Make j and k move to the next row, not file line
 nnoremap j gj
 nnoremap k gk
+
+" let g:ycm_cxx_default_flags = ['-Wall', '-Wconversion', '-std=c++14']
+let g:ycm_cxx_default_flags = ['-Wall', '-Wconversion', '-std=c++11']
+
+autocmd BufRead,BufNewFile *.pro set filetype=prolog
+
+set mouse=a
+
+"Default: /Applications/Arduino.app/Contents/Resources/Java
+let g:vim_arduino_library_path="/usr/share/arduino/"
+"Default: result of `$(ls /dev/tty.* | grep usb)`
+let g:vim_arduino_serial_port="/dev/ttyACM0"
+
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
+
+" let g:mkdp_browser = 'chromium'
+" let g:mkdp_path_chrome = "firefox"
