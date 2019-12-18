@@ -16,3 +16,5 @@ __Test__ `aplay -D default:PCH your_favourite_sound.wav`
 ## Equalizers
 [https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture](Using
 mbeq)
+## list of audio-devices and drivers
+`lspci -knn|grep -iA2 audio`

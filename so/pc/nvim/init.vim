@@ -2,16 +2,17 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 
+set noshowmode
 set encoding=UTF-8
+set scrolloff=3 " keep three lines between the cursor and the edge of the screen
 " l 0 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
-
+call plug#begin('~/.vim/plugged')
 
 source ~/.config/nvim/pluggins.vim
 
+call plug#end()
 
 
 
@@ -32,10 +33,6 @@ let g:vimtex_view_method='mupdf'
 
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-
 
 
 " coloring
@@ -124,32 +121,6 @@ au BufNewFile,BufRead *.cpp,*.hpp
   \ set autoindent |
   \ set fileformat=unix
 
-" python development
-au BufNewFile,BufRead *.py
-  \ set tabstop=4 |
-  \ set softtabstop=4 |
-  \ set shiftwidth=4 |
-  \ set textwidth=79 |
-  \ set expandtab |
-  \ set autoindent |
-  \ set fileformat=unix
-
-" Use the below highlight group when displaying bad whitespace is desired.
-" TODO: fix it
-highlight BadWhitespace ctermbg=red guibg=red
-" showing bad whitespace
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
-
-" TODO: autoactivate venv
-let g:jedi#auto_initialization=1
-let g:jedi#auto_vim_configuration=1
-
-" in your plugin constants configuration section
-let g:virtualenv_auto_activate = 1
-
-set omnifunc=jedi#completions
-let g:jedi#force_py_version = '3'
 
 " web development
 au BufNewFile,BufRead *.js, *.html, *.css
@@ -160,15 +131,12 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 
 " ycm config
-let g:ycm_confirm_extra_conf = 1
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_goto_buffer_command = 'split-or-existing-window' 
+let g:ycm_confirm_extra_conf = 0
 
-
-" jedi-vim config
-let g:jedi#use_tabs_not_buffers = 1
 
 " preview docstring
 let g:SimpylFold_docstring_preview=1
@@ -230,4 +198,16 @@ au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
 
 " let g:mkdp_browser = 'chromium'
-" let g:mkdp_path_chrome = "firefox"
+" let g:mkdp_path_chrome = \"firefox\"
+
+" modify selected text using combining diacritics
+command! -range -nargs=0 Overline        call s:CombineSelection(<line1>, <line2>, '0305')
+command! -range -nargs=0 Underline       call s:CombineSelection(<line1>, <line2>, '0332')
+command! -range -nargs=0 DoubleUnderline call s:CombineSelection(<line1>, <line2>, '0333')
+command! -range -nargs=0 Strikethrough   call s:CombineSelection(<line1>, <line2>, '0336')
+
+function! s:CombineSelection(line1, line2, cp)
+  execute 'let char = "\u'.a:cp.'"'
+  execute a:line1.','.a:line2.'s/\%V[^[:cntrl:]]/&'.char.'/ge'
+endfunction
+

@@ -1,10 +1,6 @@
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-""" DEPENDENCIES
-Plugin 'marcweber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'vim-scripts/L9'
+""" DEPENDENCIES Plug 'marcweber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'vim-scripts/L9'
 
 " vanilla Vim
 " hi Pmenu ctermbg=cyan
@@ -13,95 +9,107 @@ Plugin 'vim-scripts/L9'
 """ PLUGINS
 
 "colorscheme
-Plugin 'morhetz/gruvbox' " warn 
-Plugin 'yorickpeterse/happy_hacking.vim'
-Plugin 'AlessandroYorba/Alduin'
+Plug 'morhetz/gruvbox' " warn 
+Plug 'yorickpeterse/happy_hacking.vim'
+Plug 'AlessandroYorba/Alduin'
 
 " autoclosing brackets
-Plugin 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate'
 
 " show indent
-Plugin 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 
 " align some shit by symbol
-" Plugin 'godlygeek/tabular'
-Plugin 'junegunn/vim-easy-align'
+" Plug 'godlygeek/tabular'
+Plug 'junegunn/vim-easy-align'
 
 " make buffer out of region
-Plugin 'chrisbra/NrrwRgn'
+Plug 'chrisbra/NrrwRgn'
 
 " arg wrap ( from raw make many lines )
-Plugin 'FooSoft/vim-argwrap'
+Plug 'FooSoft/vim-argwrap'
 
-Plugin 'ycm-core/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe'
 
 " snipets for autocomplite
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " python autocomplite
-Plugin 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 
 " folder tree
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " Line in bottob ( or top )
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " comment region
-Plugin 'tomtom/tcomment_vim'
+Plug 'tomtom/tcomment_vim'
 
 " comand history
-Plugin 'wincent/command-t'
+Plug 'wincent/command-t'
 
-Plugin 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag'
 
 " nav between tmux panes and vim panes
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplet
-" Plugin 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 
 " c complete
-" Plugin 'Rip-Rip/clang_complete'
+" Plug 'Rip-Rip/clang_complete'
 " let g:clang_library_path='/usr/lib/llvm-7/lib/libclang-7.so.1'
 " c c++
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
 
-Plugin 'lervag/vimtex'
+Plug 'lervag/vimtex'
 
 " folding
-Plugin 'tmhedberg/SimpylFold'
+Plug 'tmhedberg/SimpylFold'
 
 
-Plugin 'plytophogy/vim-virtualenv'
+Plug 'plytophogy/vim-virtualenv'
 
 " ult search engine
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 
 
 """ GIT SHIT """
 " git support 
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 " git diff showing
-Plugin 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 " commit viewer
-Plugin 'junegunn/gv.vim'
+Plug 'junegunn/gv.vim'
 " visualize, stage, write/amend commit message
-Plugin 'jreybert/vimagit'
+Plug 'jreybert/vimagit'
 
 
 " django development
 " autocomplete and snippets
-Plugin 'mjbrownie/vim-htmldjango_omnicomplete'
+Plug 'mjbrownie/vim-htmldjango_omnicomplete'
 
 " markdown preview
-" Plugin 'iamcco/markdown-preview.nvim'
-Plugin 'JamshedVesuna/vim-markdown-preview'
+" Plug 'iamcco/markdown-preview.nvim'
+Plug 'JamshedVesuna/vim-markdown-preview'
 
-" Plugin 'tclem/vim-arduino'
+" Plug 'tclem/vim-arduino'
 
-" Plugin 'iamcco/markdown-preview.nvim'
-Plugin 'MikeCoder/markdown-preview.vim'
+" Plug 'iamcco/markdown-preview.nvim'
+Plug 'MikeCoder/markdown-preview.vim'
+
+" custom autocompletition
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+" Fast python completion (use ncm2 if you want type info or snippet support)
+Plug 'HansPinckaers/ncm2-jedi'
+" Words in buffer completion
+Plug 'ncm2/ncm2-bufword'
+" Filepath completion
+Plug 'ncm2/ncm2-path'
+
+" Plug 'Shougo/echodoc.vim'
