@@ -1,4 +1,0 @@
-vimtex supports Vim version 7.4.52 and neovim version 0.1.7.  It will not                            
-  load for older versions, unless one adds                                                             
-                                                                                                         
-                                                                                                             let g:vimtex_version_check = 0
