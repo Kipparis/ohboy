@@ -1,6 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
-
+filetype off                  " required 
 
 set noshowmode
 set encoding=UTF-8
@@ -75,7 +74,7 @@ set foldtext=getline(v:foldstart+1)
 " set clipboard=unnamed
 
 
-setlocal colorcolumn=73
+" setlocal colorcolumn=73
 setlocal textwidth=72
 
 
@@ -85,8 +84,13 @@ let g:delimitMate_expand_cr = 2
 
 " autoclose when only tree open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+  " to see available characters :digraph
+let g:NERDTreeDirArrowExpandable = '▶'
+let g:NERDTreeDirArrowCollapsible = '▼'
+
+  " autostart nerd tree when no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " l 0 
 " for airline to work
@@ -131,7 +135,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 
 " ycm config
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_goto_buffer_command = 'split-or-existing-window' 
@@ -143,6 +147,8 @@ let g:SimpylFold_docstring_preview=1
 
 " not hiding symbols
 set conceallevel=1
+" splitting on right
+set splitright
 
 " indentLine
 " tab show
@@ -154,10 +160,6 @@ let g:indentLine_setConceal = 0 " save conceallevel
 
 
 syntax on
-
-set splitright
-source ~/.config/nvim/mapping.vim
-
 
 
 " GIT
@@ -210,4 +212,24 @@ function! s:CombineSelection(line1, line2, cp)
   execute 'let char = "\u'.a:cp.'"'
   execute a:line1.','.a:line2.'s/\%V[^[:cntrl:]]/&'.char.'/ge'
 endfunction
+
+hi Normal ctermbg=NONE
+
+" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['js']='ƛ'
+" if exists("g:loaded_webdevicons")
+" 	call webdevicons#refresh()
+" endif
+
+  " specify own icons that don't work as expected
+" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['py'] = '+'
+
+  " round tabs to a multiple of 'shiftwidwth'
+set shiftround
+
+" TODO: make mapping with <leader>narrowRegion
+let mapleader=','
+let maplocalleader='.'
+source ~/.config/nvim/mapping.vim
+
 

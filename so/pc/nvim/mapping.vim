@@ -3,10 +3,8 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign) 
 
-
 " switching light and dark bg
 " call togglebg#map("<F5>")
-
 
 " Set ultisnips triggers
 " works after restarting :/
@@ -38,14 +36,25 @@ nnoremap <space> za
 " set mapping for folding custom region
 " set mapping for folding func
 " set mapping for folding docstring
-"
 
-map <leader>cc :!ino build -d /usr/share/arduino10 -m leonardo<CR>
-map <leader>uu :!ino upload -d /usr/share/arduino10 -m leonardo -p /dev/ttyACM0<CR>
-map <leader>ss :!ino serial -p /dev/ttyACM0<CR>
-" map <leader>cc :!ino build -d /usr/share/arduino10<CR>
-" map <leader>uu :!ino upload -d /usr/share/arduino10<CR>
 
 map <leader>p :vsp \| terminal swipl -q %<CR>
 
 nmap <F8> :TagbarToggle<CR>
+
+  " select word under cursor
+nnoremap <space> viw
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+inoremap jk <esc>
+
+  " faster moving
+nnoremap <s-l> $
+nnoremap <s-h> ^
+nnoremap <s-k> 30k
+nnoremap <s-j> 30j
+  " move line downward
+nnoremap <C-j> ddp
+  " move line upward
+nnoremap <C-k> ddkP
