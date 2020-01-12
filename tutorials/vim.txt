@@ -82,6 +82,11 @@ vim {
     how to build vimrc - :help vimrc-intro
   }
 
+  buffers->split {
+    :buffers - view list of buffers
+    :vsp | b<number> - open buffer as split
+  }
+
   pluggins {
     snippets {
       :UltiSnipsEdit - edit snippets for this particular filetype
