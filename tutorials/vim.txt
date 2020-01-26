@@ -52,7 +52,7 @@ i3 {
   > xprop 
 }
 
-vim {
+vim {{{{
   C+o - go to previous position - helpful when got to definition or something else
   C+i - got to newer position
   G   - end of file
@@ -199,7 +199,35 @@ vim {
         Start UasyAlign command (ga) for Inner Paragraph
     }
   }
-}
+}}}}
+
+$$$$ Generic notes $$$$ {{{
+    > echo options
+:echo &textwidth
+    > use options as variables
+:let &textwidth = 100
+:set textwidth?
+:let &textwidth = &textwidth + 10
+:set textwidth?
+}}}
+$$$$ Command Notes $$$${{{
+:execute "write"
+    :write<cr>;
+    also replaces <cr>, other special characters;
+:execute "normal! gg"
+    type gg in normal mode
+
+$ Registers ${{{
+    > echoing them
+:echo @<register_name>
+    > set register
+:let @a = "hello!"
+    > register with `yank`
+:echo @"
+    > register after search with its content
+:echo @/
+}}}}}}
+$$$$ Create Mappings $$$$
 
 
 mappings {

@@ -1,3 +1,4 @@
+" TODO: BufLeave on nerd tree switches on another pane
 "===== Plugins ====="{{{
 call plug#begin('~/.vim/plugged')
 
@@ -261,7 +262,7 @@ set omnifunc=htmlcomplete#CompleteTags
 " css auto-complete
 set omnifunc=csscomplete#CompleteCSS
 "}}}
-"===== C-family development ====="{{{
+"===== C++-family development ====="{{{
 au BufNewFile,BufRead *.cpp,*.hpp
   \ set tabstop=4 |
   \ set softtabstop=4 |
@@ -344,6 +345,8 @@ map <leader>p :vsp \| terminal swipl -q %<CR>
 "===== Latex development ====="{{{
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method='mupdf'
+" do not break with delimitMate <>
+" au FileType tex,latex b:delimitMate_matchpairs = "(:),[:],{:},$:$"
 "}}}
 "===== MarkDown development ====="{{{
 augroup filetype_md
@@ -357,7 +360,17 @@ augroup END
 
 
 "}}}
-
+"===== Txt(notes) development{{{
+au BufNewFile,BufRead *.txt
+  \ set tabstop=4 |
+  \ set softtabstop=4 |
+  \ set shiftwidth=4 |
+  \ set textwidth=79 |
+  \ set expandtab |
+  \ set autoindent |
+  \ set smartindent |
+  \ set fileformat=unix
+"}}}
 "}}}
 "===== Mappings ========"{{{
 "======================="
