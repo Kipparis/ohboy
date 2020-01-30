@@ -347,6 +347,15 @@ let g:tex_flavor = 'latex'
 let g:vimtex_view_method='mupdf'
 " do not break with delimitMate <>
 " au FileType tex,latex b:delimitMate_matchpairs = "(:),[:],{:},$:$"
+augroup filetype_tex
+  " clear all commands in group
+  autocmd!  
+  autocmd FileType tex,latex
+    \ setlocal foldmethod=syntax |
+    \ setlocal tabstop=4 |
+    \ setlocal softtabstop=4 |
+    \ setlocal shiftwidth=4
+augroup END
 "}}}
 "===== MarkDown development ====="{{{
 augroup filetype_md
