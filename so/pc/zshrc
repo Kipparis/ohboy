@@ -239,6 +239,12 @@ alias set_default_monitor='xrandr --output DVI-D-1 --primary --right-of VGA-0'
 	# edit music tags
 # easytag
 # }}}
+# ~~~ Variables ~~~ {{{ 
+# HISTFILE # location of history file for bash
+# readline in .inputrc 
+# or 
+set -o vi	# vi editing mode
+# }}} 
 # useful aliases | system aliases {{{
 alias turn_off_bell='xset -b'
 alias set_local_time='sudo ntpd -qg'
