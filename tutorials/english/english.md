@@ -1,23 +1,19 @@
 # This file will work for me as reminder to rules in English language.
 _book: Basic English Grammas. second edition._ 
-<!-- 3-3 -->
+<!-- 3-10 -->
 
 ## Prepositions.
 __Preposition phrase__ - a preposition + a noun. _(at the library)_  
 
-## Questions.
+## Questions. <!-- {{{ -->
 ### What\Who
 __What__ asks about things.  
 __Who__ asks about people.  
-### To be (simple)   
-__Is__ the book on the table?  
-__Where is__ the book?  
-### Where (simple)
-__Do__ they live in Tokyo?  
-__Where do__ they live?  
-### When (simple)
-__When__ do you go to class?  
-__What time__ do you go to class?  
+### Would
+__Would__ you __like__ some tea? -- In a question, would comes before
+the subject.  
+Yes, I __would__. (I would like some tea.)  
+<!-- }}} -->
 
 ## Progressive form.
 + I -> my;  
@@ -45,6 +41,15 @@ Verb after she, he, it (3rd person singular) has a final -s: talks.
 ### Negative
 I do not drink coffee
 She does not drink coffee. (s goes to helping verb)
+### To be  
+__Is__ the book on the table?  
+__Where is__ the book?  
+### Where  
+__Do__ they live in Tokyo?  
+__Where do__ they live?  
+### When  
+__When__ do you go to class?  
+__What time__ do you go to class?  
 ### Using frequency adverbs.  
 Subject + frequency adverb + present verb.  
 with __be__:  
@@ -116,12 +121,29 @@ not double w,x, and y)_.
 	+ fix -> fixing  
 <!-- }}} -->
 ## Meaning <!-- {{{ -->
-### See, look at, watch, hear, and listen to
+### See, look at, watch, hear, and listen to 
 I __see__ many things in this room. -- __see__ = a nonaction verb. Seeing
 happens because my eyes are open. Seeing is a physical reaction, not a
 planned action.  
 I __am looking at__ the clock. I want to know the time. -- __look at__ =
 an action verb. Looking is a planned or purposeful action. Looking
 happens for a reason.  
+Bob __is watching__ TV. -- __watch__ = an action verb. I watch something
+for a long time, but I look at something for a short time.   
+I'm in my apartment. I'm trying to study. I __hear__ msic from the next
+apartment. The music is loud. -- __hear__ = a nonaction verb. Hearing is
+unplanned act. It expresses a physical reaction  
+I'm in my apartment. I'm studying. I have a tape recorder. I __am
+listening to__ music. I like to listen to music when I study. --
+__listen (to)__ = an action verb. Listening happens for a purpose.  
+### Need and want + a noun or an infinitive 
+We __need food__.  
+I __want a sandwich__.  
+__Need__ is stronger than __want__. __Need__ gives the idea that
+something is very important.   
+### Would like  
+I'm thirsty. I __want__ a glass of water.  
+I'm thirsty. I __would like__ a glass of water.  
+I _would like_ is a nice way of saying _I want_.
 
 <!-- }}} -->
