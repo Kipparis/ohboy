@@ -327,6 +327,17 @@ let g:jedi#show_call_signatures = "2"
 
 
 "}}}
+" ===== Shell development ===== {{{
+augroup filetype_sh
+  " clear all commands in group
+  autocmd!  
+  autocmd FileType zsh,bash
+    \ setlocal foldmethod=marker |
+    \ setlocal tabstop=4 |
+    \ setlocal softtabstop=4 |
+    \ setlocal shiftwidth=4
+augroup END
+" }}}
 "===== Arduino development ====="{{{
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
