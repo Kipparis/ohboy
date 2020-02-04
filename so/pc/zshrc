@@ -146,7 +146,6 @@ alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" \
 # sudo nvim /etc/modprobe.d/nouveau_blacklist.conf  
 
 alias dev="cd ~/files/proj/nextgen/levelteleg && source venv/bin/activate && cd base"
-
 alias ka="nvim"
 
 # unmout encrypted fs
@@ -219,6 +218,10 @@ fi
 # gucharmap
 	#--- check in witch fonts char is presented
 # perl ~/.scripts/test-fonts.pl "<glyph>"
+# }}}
+# ~~~ Time ~~~ {{{
+alias 45min_timer="timer 45 m ~/files/sounds/bell_1.mp3 > /dev/null &"
+alias 15min_timer="timer 15 m ~/files/sounds/bell_1.mp3 > /dev/null &"
 # }}}
 # ~~~ Music ~~~ {{{
 	# start mpd

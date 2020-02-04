@@ -2,8 +2,26 @@
 _book: Basic English Grammas. second edition._ 
 <!-- 3-10 -->
 
+<!-- How I understood, at is used when I talk about something specific. -->
 ## Prepositions.
-__Preposition phrase__ - a preposition + a noun. _(at the library)_  
+__Preposition phrase__ - a preposition + a noun. _(at the library)_   
+
+## Prepositions of location  
+My book is __on__ my desk.
+	+ on = a preposition
+	+ my desk = object of the preposition
+	+ on my desk = prepositional phrase
+Tom lives __in__ _the United States_ .
+	+ __in__ a country and __in__ a city  
+	+ __on__ a streen, avenue, road, etc  
+	+ __at__ an adress
+The man is __in back of__ the bus. -- man is outside and begind the bus.
+The man is __in the back of__ the bus. -- man is inside.  
+
+## Talk to, talk on
+__talk to__ (someone)  
+__talk on__ the phone  
+__talk to__ each other  
 
 ## Questions. <!-- {{{ -->
 ### What\Who
@@ -145,5 +163,30 @@ something is very important.
 I'm thirsty. I __want__ a glass of water.  
 I'm thirsty. I __would like__ a glass of water.  
 I _would like_ is a nice way of saying _I want_.
+### _Think about_ and _thing that_
+I __think about__ my family every day. -- Ideas about my family are in my
+mind every day.  
+I __am thinking about__ grammar right now. -- My mind is busy now. Ideas
+about grammar are in my mind right now.  
+I __think that__ Sue is lazy. -- In my optinion, Sue is lazy. I velieve
+that Sue is lazy.  
+People use __think that__ when they want to say (to state) their
+beliefs.  
+The _present progressive_ is:
+	+ often used with __think about__
+	+ almost never used with __think that__
+I __think that__ Mike is a nice person.  
+I __think__ Mike is a nice person. -- people often omit __that__ after
+__think__, especially in speaking.  
+### There + be  
+__There is a bird__ in the tree.  
+__There + be__ is used to say that something exists in a particular
+location.  
+Q: __Is there any milk__ in the refrigerator?
+A: Yes, there is. No, there isn't.  
+Asking Q with how many:
+__How many__ chapters __are there__ in this book?  
+
+
 
 <!-- }}} -->

@@ -26,7 +26,11 @@ tmux:{
     & kill the current window
   }
 
+  I resource conf (or tmux source ~/.tmux.conf)
+  alt+u remove the plugin
   $ kill the current session
+
+  plugins are installed to ~/.tmux/plugins
 }
 
 code {

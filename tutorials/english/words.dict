@@ -36,10 +36,16 @@ middle finger - средний палец
 ring finger - безымянный палец
 little finger - мизинец
 
+[Position]
+accountant - бухгалтер
+joggers - бугены
+
 [Feelings]
 thirsty - жаждущий
+asleep - спящий
 
 [Animals]
+squirrels - белочки
 whale - кит
 yip - тявкать
 
@@ -49,4 +55,80 @@ humid - влажный
 [Town]
 downtown - в центре города
 
+[Steet]
+bench - скамейка
+
+[Things]
+pencil sharpener - точилка
+
+[Kitchen]
+bowl - миска
+pot - горшок
+cup - кружка
+fork - вилка
+knife - нож
+spoon - ложка
+glass - стакан
+plate - тарелка
+saucer - блюдце
+restaurant - рестаран
+waiter - официант
+cook - жарить `приготовить` -- focuses more narrowly on the act of applying heat 
+bake - запечь
+make - приготовить
+taste(food) - попробовать
+grocery list - список продуктов
+refrigerator - холодильник
+stove - плита
+pepper shaker - перечника
+salt shaker - солонка
+
+[Food]
+flour - мука
+strawberries - клубника
+pepper - перец
+gum - жевачка
+chew - жевать
+
+[Room]
+furniture - мебель
+sofa - диван
+cupboard - шкаф
+shelf - полка
+shelves - полки
+fishbowl - круглый аквариум
+living room - гостинная
+rug - коврик\плед
+bed - постель
+pillow - подушка
+
+[Preposition of place]
+beside\near - рядом
+far away from - далеко
+
+[Lighing]
+candle - свеча
+
+[Learning]
+take notes - делать записи
+librarian - библиотекарь
+circulation desk - ресепшн
+
+[Money]
+write a check - выписать чек
+sign a check - подписать чек
+cash - деньги `наличные деньги`
+first name/given name - имя
+middle initial - второй инициал
+last name/family name/surname - фамилия
+cash a check - обналичить чек
+stand in line - стоять в очереди
+bank teller - банковский кассир\работник банка
+bank counter - окошко в банке
+
+[General]
+man - мужчина
+men - мужчины
+people - люди
+dream - мечтать
 
