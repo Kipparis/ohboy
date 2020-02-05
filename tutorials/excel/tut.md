@@ -1,3 +1,4 @@
+_книга_
 definitions :
 {
     чистая приведённая стоимость (net present value) - чпс
