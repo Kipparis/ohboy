@@ -101,59 +101,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # }}}
-
-# automatic aftorisation for ssh
-    # mkdir ~/.ssh
-    # ssh-keygen -t rsa -q -N '' -f ~/.ssh/id_rsa
-    # ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.org.ua
-    # ssh user@remoute.org.ua
-
-# Wacom aliases
-# TODO: move to script with calculating ratio
-# xrandr
-alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" \
-  MapToOutput HEAD-0'   
-# alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-D-2 '
-alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" \
-  MapToOutput HEAD-1'
-
-# midi synth alias sound="qsynth"
-
-# check for RAM (system lag while several applications are opened)
-# free -h
+# ~~~ How something works :p ~~~ {{{
 #
-# slow boot time or application first time launch
-# hdparm -t /deb/sdX
+# Default applications for Chrome
 #
-# CPU load is hign even with enough RAM available =>
-# disable running daemons and/or processes
-# htop
-# pstree
-# or another system monitoring tool
+# Chromium opens files through xdg-open (have it in mind when change
+# default application)
+# To check default application for opening (file manager for example):
+# $ xdg-mime query default inode/directory
+# To change:
+# $ xdg-mime default caja.desktop inode/directory
+# more in: https://wiki.archlinux.org/index.php/Xdg-utils#xdg-open
 #
-# direct rendering are slow (GPU part)
-# check if direct rendering enabled:
-# glxinfo | grep "direct rendering"
 #
-# check for drivers
-# lspci -v
-# lspci -k | grep -A 2 -E "(VGA|3D)"
-#
-# header number
-# uname -r
-#
-# blacklist old GPU driver (open source)
-# sudo nvim /etc/modprobe.d/nouveau_blacklist.conf  
-
-alias dev="cd ~/files/proj/nextgen/levelteleg && source venv/bin/activate && cd base"
-alias ka="nvim"
-
-# unmout encrypted fs
-# fusermount -u ~/encrypted
-# mount again
-# encfs ~/.encrypted ~/encrypted
-
-
+# }}}
 # ~~~ Stream Section ~~~ {{{
 alias twitch_chat='chromium --app=https://www.twitch.tv/popout/kipparis49/chat\?popout\='
 alias restream_chat='chromium --app=https://chat.restream.io/chat'
@@ -166,6 +127,10 @@ alias restream_chat='chromium --app=https://chat.restream.io/chat'
 alias visualize_micro="python3 $HOME/.scripts/spectrogram.py -g 160 -d pulse"
 # }}}
 #~~~ System Maintaining ~~~{{{
+# Kernel {{{
+# header number
+# uname -r
+# }}}
 # Memory{{{
 
 	# out installed packages with size
@@ -181,10 +146,37 @@ alias visualize_micro="python3 $HOME/.scripts/spectrogram.py -g 160 -d pulse"
 
 # }}}
 # Graphics{{{
+# xrandr
 	# default monitor
 alias set_default_monitor='xrandr --output DVI-D-1 --primary --right-of VGA-0'
-#}}}
 
+# direct rendering are slow (GPU part)
+# check if direct rendering enabled:
+# glxinfo | grep "direct rendering"
+#}}}
+# Drivers {{{
+# check for drivers
+# lspci -v
+# lspci -k | grep -A 2 -E "(VGA|3D)"
+#
+# blacklist old GPU driver (open source)
+# sudo nvim /etc/modprobe.d/nouveau_blacklist.conf  
+# }}}
+# RAM {{{
+# check for RAM (system lag while several applications are opened)
+# free -h
+# }}}
+# CPU {{{
+# CPU load is hign even with enough RAM available =>
+# disable running daemons and/or processes
+# htop
+# pstree
+# or another system monitoring tool
+# }}}
+# SATA/IDE {{{
+# slow boot time or application first time launch
+# hdparm -t /deb/sdX
+# }}}
 # }}}
 # ~~~ Colors ~~~ {{{
 # Where to change colors:
@@ -270,14 +262,35 @@ alias turn_off_bell='xset -b'
 alias set_local_time='sudo ntpd -qg'
 alias fix_time='timedatectl set-ntp true'
 alias remove_cached='git rm -r --cached .'
+
+# move program to background
+	# C-z => bg => disown
+
+# Wacom aliases
+alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" \
+  MapToOutput HEAD-0'   
+# alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-D-2 '
+alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" \
+  MapToOutput HEAD-1'
+
 # view files for package
     # pacman -Ql st
+	
+# automatic aftorisation for ssh
+    # mkdir ~/.ssh
+    # ssh-keygen -t rsa -q -N '' -f ~/.ssh/id_rsa
+    # ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.org.ua
+    # ssh user@remoute.org.ua
+	
+# unmout encrypted fs
+	# fusermount -u ~/encrypted
+	# mount again
+	# encfs ~/.encrypted ~/encrypted
 # }}}
 # programms in use {{{
 alias video_recorder="simplescreenrecorder"
 alias show_keys="screenkey" # --scr 1 for showing on big screen
 alias music_player="ario"
-# }}}
 
-# when run command from terminal
-# C-z => bg => disown
+# midi synth alias sound="qsynth"
+# }}}
