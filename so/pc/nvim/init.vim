@@ -362,7 +362,7 @@ augroup filetype_tex
   " clear all commands in group
   autocmd!  
   autocmd FileType tex,latex
-    \ setlocal foldmethod=syntax |
+    \ setlocal foldmethod=marker |
     \ setlocal tabstop=4 |
     \ setlocal softtabstop=4 |
     \ setlocal shiftwidth=4
