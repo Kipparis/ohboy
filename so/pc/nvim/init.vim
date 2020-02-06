@@ -81,6 +81,8 @@ Plug 'plytophogy/vim-virtualenv'
 " ult search engine
 Plug 'kien/ctrlp.vim'
 
+Plug 'tpope/vim-surround'
+
 
 """ GIT SHIT """
 " git support 

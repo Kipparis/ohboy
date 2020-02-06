@@ -1,7 +1,8 @@
 # General Structure of file <!-- {{{ -->
+__primitive call__ == nonrecursive function call  
 ```python
 def _test():				# for testing purpose
-    import doctest
+    import doctest	# may be used any package from `testing` section
     doctest.testmod()
 
 if __name__ == "__main__":  # for execution
@@ -10,12 +11,11 @@ if __name__ == "__main__":  # for execution
 <!-- }}} -->
 # Debugging, Testing, and Profiling <!-- {{{ -->
 ## Debugging <!-- {{{ -->
-__Tracebacks__ should be read from last line.  
+__Tracebacks__ should be read from last line.   
 __!Warning!__ catching all exceptions will lead to when user presses Ctrl+C the
   program won't stop and you lock the user.
-<!-- }}} -->
-
-Exception chaining
+### Exception chaining
+```python
 class InvalidDataError(Exception): pass
 
 def process(data):
@@ -24,48 +24,57 @@ def process(data):
     ...
   except ValueError as err:
     raise InvalidDataError("Invalid data received") from err
+```
 
-Scientific Debugging:::
-1. Think up an explanation
-2. Create an experiment to test
-3. Tun the experiment
+### Scientific Debugging
+1. Think up an explanation  
+2. Create an experiment to test  
+3. Tun the experiment  
 Check the incoming parameters up to call stack. Check local variables
-and return value
-print(locals(), "\n")
+and return value.  
+Use statement: `print(locals(), "\n")`  
 
-Use of debugger pbd:
-> python3 -m pdb my_program.py
+Use debugger __pbd__ as
+```
+$ python3 -m pdb my_program.py
+```
 orrrrrr
->
+```	python
 import pdb
 pdb.set_trace()
-Use of debugget idle
+```
+Use of debugger __IDLE__
+<!-- }}} -->
+## Testing <!-- {{{ -->
+__Unit testing__ - e.g. testing individual functions, classes, and methods, to ensure that
+they begave as expected.  
+Key point of __TDD__(Test Driven Development) is when we want to add a feature - we first write a
+test for it.  
+In functions that __doesn't return anything__, can be usefull to return fake
+objects - thurd-party modules that provide "mock" objects.  
+  
+Python provides two unit testing modules:  
+  + doctest  
+  + unittest  
+__Third-party__ testing tools:
+  + nose  
+  + py.test  
 
-Unit Testing:::
-E.g. testing individual functions, classes, and methods, to ensure that
-they begave as expected.
-Key point of TDD is when we want to add a feature - we first write a
-test for it.
-In functions that doesn't return anything, can be usefull to return fake
-objects - thurd-party modules that provide "mock" objects
-Python provides two unit testing modules:
-  + doctest
-  + unittest
-Third-party testing tools:
-  + nose
-  + py.test
-
-Writing doctests:
+Writing doctests:  
+```python
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-
-For programs:
+```
+For programs:  
+```python
 if __name__ == "__main__":
     main()
-then:
-python3 -m doctest blocks.py
-or module unittest can provide as with testing from file:
+```
+then: `python3 -m doctest blocks.py`   
+
+Module __unittest__ can act like doctest:  
+```python
 import doctest
 import unittest
 import blocks
@@ -73,28 +82,32 @@ suite = unittest.TestSuite()
 suite.addTest(doctest.DocTestSuite(blocks))
 runner = unittest.TextTestRunner()
 print(runner.run(suite))
+```
 
-Unittest module defines four key concepts:
-  test fixture - the code necessary to set up a test
-  test suite - collection of test cases
-  test case - basic unit of testing
-  test runner - object that executes one or more test suites
+__Unittest__ module defines four key concepts:   
+	+ test fixture - the code necessary to set up a test  
+	+ test suite - collection of test cases  
+	+ test case - basic unit of testing  
+	+ test runner - object that executes one or more test suites  
 
-Test suite creatied by inheritace unittest.TestCase class
-test case = each method with name starting with "test"
-any set up in setUp();
-any cleanup in tearDown();
-various unittest.TestCase methods:
-  assertTrue()
-  assertEqual()
-  assertAlmostEqual() -- testing floating-point numbers
-  assertRaises()
-  many more
+__Test suite__ created by inheritace _unittest.TestCase_ class.  
+__Test case__ = each method with name starting with "test".  
+	+ set up in `setUp();`  
+	+ cleanup in `tearDown();`  
+various __unittest.TestCase__ methods:
+	+ `assertTrue()`  
+	+ `assertEqual()`  
+	+ `assertAlmostEqual()` -- testing floating-point numbers  
+	+ `assertRaises()`  
+	+ many more
 ends with:
+```python
 if __name__ == "__main__":
-  unittest.main()
+	unittest.main()
+```
 
-when running from another file:
+Running from __external file__:
+```python
 import unittest
 import test_Atomic
 
@@ -102,28 +115,31 @@ suite =
 unittest.TestLoader().loadTestsFromTestCase(test_Aromic.TestAtomic)
 runner = unittest.TextTestRunner()
 print(runner.run(suite))
+```
 
-asserting exceptions:
+__asserting exceptions__:
+```python
 with self.asssertRaises(AttributeError):
-  ...
+	...
+```
+<!-- }}} -->
+## Profiling <!-- {{{ -->
+Best practices:  
+	+ prefer tuples to lists when a __read-only sequence is needed__  
+	+ __use generators__ rather than creating large upbles or lists  
+	+ use python's __built-in data structures__  
+	+ instead of concatenating strings, turn them into list of strings and 
+\		then join the list of strings into a single string at the end  
+	+ when object accessed a large number of times using attribute access, 
+\		it may be better to create and use local variable that refers to the
+\		object to provide faster access  
 
+two modules for investigating the performance of out code:  
+	+ timeit - timing small pieces of out code  
+	+ cProfile - find bottlenecks  
 
-Profiling:::
-Best practices:
-  prefer tuples to lists when a read-only sequence is needed
-  use generators rather than creating large upbles or lists
-  use python's built-in data structures
-  instead of concatenating strings, turn them into list of strings and
-    then join the list of strings into a single string at the end
-  when object accessed a large number of times using attribute access,
-    it may be better to create and use local variable that refers to the
-    object to provide faster access
-
-two modules for investigating the performance of out code:
-  timeit - timing small pieces of out code
-  cProfile - find bottlenecks
-
-timeit:
+### timeit
+```python
 if __name__ == "__main__":
   repeats = 1000
   for function in ("func_a", "func_b", "func_c"):
@@ -131,24 +147,30 @@ if __name__ == "__main__":
       {0}, X, Y".format(function))
     sec = t.timeit(repeats)/ repeats
     print("{function}() {sec:.6f} sec".format(**locals()))
-run it from cli:
+```
+run it from cli:  
+```shell
 python3 -m timeit -n 1000 -s "from MyModule import function_a, X, Y"
   "function_a(X, Y)"
+```
 
-cProfile:
+### cProfile
+```python
 if __name__ == "__main__":
   for function in ("function_a", "function_b", "function_c":
     cProfile.run("for i in range(1000): {0}(X, Y)".format(function))
-cli:
+```
+cli:  
+```shell
 python3 -m cProfile programOrModule.py
-
-primitive call == nonrecursive function call
-later we can do:
-  cProfile.run("function_b()")
-  python3 -m cProfile -o profileDataFile programOrModule.py
-  and then use pstats
-
-ing 
+```
+we can do:
+```python
+cProfile.run("function_b()")
+python3 -m cProfile -o profileDataFile programOrModule.py
+```
+, then use __pstats__
+<!-- }}} -->
 <!-- }}} -->
 # Classes <!-- {{{ -->
 ## Special Methods <!-- {{{ -->
@@ -462,72 +484,70 @@ at the end call:	   `matcher.close()`
 `pipeline = get_data(process(reporter()))`
 <!-- }}} -->
 <!-- }}} -->
+# Processes and Threading <!-- {{{ -->
+## Subprocess  
+__Subprocess__ module provides facilities for tunning other programs and
+communicating using pipes.  
+example in grep-p, and grep-p-child:  
+	+ how to create child  
+	+ how to pass arguments and nicely call same interpreter  
+	+ how to write and read  
+	+ how to wait for them and exit  
+## Threading  
+Threads __are created__ by threading.Thread(callable) or we can pass subclass
+of threading.Thread.  
+Threads __are only started__ by .start() and they will wait until it's
+possible.  
 
-===========================
-Processes and Threading====
-===========================
-
-subprocess module provides facilities for tunning other programs and
-communicating using pipes.
-
-example in grep-p, and grep-p-child, how to create child
-how to pass arguments and nicely call same interpreter
-how to write and read
-how to wait for them and exit
-
-Using the Threading Module
-
-queue.Queue provides:
-  + FIFO
-  + LIFO
-  + PriorityQueue
-has garantee that only one thread has access (serialize access)
-
-Threads are created by threading.Thred(callable) or we can pass subclass
-of threading.Thread.
-Threads are only started by .start() and they will wait until it's
-possible.
-
-use:
-  + queue.put() to add task
-  + queue.get() to get task
-  + queue.task_done() complete task
-  + queue.join() wait until all tasks are done
-
-example in grep-t.py
-
-could use of multiprocessing module.
-it could be faster becouse each processor could be executed on separate
-core.
+**_example in grep-t.py_**  
 methods to use: 
-  + Worker class inherits multiprocessing.Process
-  + multiprocessing.JoinableQueue instead of queue.Queue
+	+ Worker class inherits multiprocessing.Process  
+	+ multiprocessing.JoinableQueue instead of queue.Queue  
 
-to use own lock write next:
-in class:
-  _lock = threading.Lock()
-in function
-  with self._lock:
-    ***
+### Serialized queue 
+__queue.Queue__ provides:
+	+ FIFO  
+	+ LIFO  
+	+ PriorityQueue - garantee that only one thread has access
+\	  (_serialize access_)  
+
+use of working __queue__:  
+	+ `queue.put()` to add task  
+	+ `queue.get()` to get task  
+	+ `queue.task_done()` complete task  
+	+ `queue.join()` wait until all tasks are done  
+
+### Locking 
+to use own __lock__ write next:  
+in class: `_lock = threading.Lock()`  
+in function:   
+```python
+with self._lock:
+	***
+```
 this will ensure that all class objects share the same lock and not
-access object at the same time.
+access object at the same time.  
 
-other available locks:
-  + threading.RLock - can be used again by thread who blocked
-  + threading.Semaphore - protect specific number of resources
-  + threading.Condition - provides a wait condition
+other available locks:  
+	+ threading.RLock - can be used again by thread who blocked  
+	+ threading.Semaphore - protect specific number of resources  
+	+ threading.Condition - provides a wait condition  
+
+---  
+
+Could use __multiprocessing__ module. It could be faster becouse each 
+processor can be executed on separate core.  
 
 You can't archive best performance becouse CPython enterpreter can
 execute Python code on only one processor at a time, even using multiple
-threads.
+threads.  
 
-with threading we devise come kind of communication, shared memory (mmap
-module), shared files or networking
+With threading we devise come kind of communication, shared memory (mmap
+module), shared files or networking.  
+<!-- }}} -->
+# Networking <!-- {{{ p. 465 -->
 
-==============
-==NETWORKING==
-==============
-(p. 465)
+<!-- }}} -->
 
 UDP is using when it's not necessary to create reliable connection
 TCP - reliable connection and stream-oriented protocol
