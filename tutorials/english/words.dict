@@ -1,18 +1,16 @@
+### TODO: add pronounciation in []
 [Grammar]
-noun - существительное
-pronoun - местоимение
+noun - существительное :: subject or object of sentence
+pronoun - местоимение :: "refers to" a noun
 article - частица
 contraction - соединение\уменьшение
 adjective - прилагательное :: describe or give information about 
 	a noun or pronoun that comes at the beginning of a sentence. 
-verb - глагол
+verb - глагол :: action
 consonant - согласный
 spelling - написание
 preposition - предлог
-<<<<<<< HEAD
 literacy - граммотность
-=======
->>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 
 [Colors]
 tan, beige - бежевый, загарелый
@@ -21,10 +19,17 @@ tan, beige - бежевый, загарелый
 belt - пояс
 gloves - перчатки
 skirt - юбка
+shorts - шорты
+hoody - толстовка
 tie, necktie - галстук
 jacket - куртка
 pants- брюки
 slacks - широкие брюки
+
+[Fruits]
+pomegranate - гранат
+chicory - цикорий
+ripe - созревший
 
 [Human parts]
 ear - ухо
@@ -58,9 +63,10 @@ humid - влажный
 
 [Town]
 downtown - в центре города
-
-[Steet]
 bench - скамейка
+
+[Nature]
+bush - куст
 
 [Things]
 pencil sharpener - точилка
@@ -86,6 +92,7 @@ refrigerator - холодильник
 stove - плита
 pepper shaker - перечника
 salt shaker - солонка
+tray - поднос
 
 [Food]
 flour - мука
@@ -93,6 +100,7 @@ strawberries - клубника
 pepper - перец
 gum - жевачка
 chew - жевать
+sour - кислый
 
 [Room]
 furniture - мебель
@@ -135,4 +143,19 @@ man - мужчина
 men - мужчины
 people - люди
 dream - мечтать
+poverty - бедность
+admire - восхищаться
+
+[Nationalities] 
+American
+Canadian
+Chinese
+Egyptian
+Indonesian
+Italian
+Japanese
+Korean
+Malaysian
+Mexican
+Saudi Arabian 
 

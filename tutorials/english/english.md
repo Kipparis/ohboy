@@ -7,19 +7,11 @@ _book: Basic English Grammas. second edition._
 __Preposition phrase__ - a preposition + a noun. _(at the library)_   
 
 ## Prepositions of location  
-<<<<<<< HEAD
 My book is __on__ my desk.  
 	+ on = a preposition
 	+ my desk = object of the preposition
 	+ on my desk = prepositional phrase
 Tom lives __in__ _the United States_ .  
-=======
-My book is __on__ my desk.
-	+ on = a preposition
-	+ my desk = object of the preposition
-	+ on my desk = prepositional phrase
-Tom lives __in__ _the United States_ .
->>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 	+ __in__ a country and __in__ a city  
 	+ __on__ a streen, avenue, road, etc  
 	+ __at__ an adress
@@ -31,12 +23,51 @@ __talk to__ (someone)
 __talk on__ the phone  
 __talk to__ each other  
 
+# Nouns
+## subject and object
+__Birds__ fly. -- A noun is used as the object of a sentence.  
+__John__ is holding a __pen__. -- pen is a Noun. A pen is used as the
+__object of the verb__ _is holding_.  
+__Birds__ fly in the __sky__ -- A noun is also used as the __object of a
+preposition__.  
+
+## Adjective + noun
+_Adjectives describe nouns. In grammar, we say that adjectives "modify"
+nouns._  
+Adjectives come in front of nouns.   
+(a) I don't like __cold__ weather.   
+(b) Ales is a __happy__ child.  
+_An adjective can also follow **be**; the adjective describes the
+subject of the sentence._   
+(d) The weather is __cold__.  
+
+## Subject pronouns and object pronouns
+| Subject pronouns     | Object pronouns      |
+| ---                  | ---                  |
+| __I__ speak English  | Bob knows __me__.    |
+| __we__ speak English | Bob talks to __us__. |
+I know __Tony__. __He__ is a friendly person. -- Pronouns has the same
+meaning as a noun.  
+
+## Singular and plural  
+__one pen__ - __two pens__ -- to make the plural form of most nouns: add
+-s   
+__baby__ - __babies__ -- end: _consonant + **-y**_, plural: y -> i, add
+-es   
+__boy__ - __boys__ -- end: _vowel + -y_, plural: add _-s_  
+__wife__ - __wives__ -- end: _-fe_ or _-f_, plural: change _f_ to _v_,
+add _-es_    
+__dish__ - __dishes__ -- end: _-sh, -ch, -ss, -x_, plural: add _-es_,
+pronunciation: /az/  
+__tomato__ - __tomatoes__ -- end: consonant + _-o_, plural: add _-es_  
+__zoo__ - __zoos__ -- end: vowel + _-o_, plural: add _-s_  
+
+
 ## Questions. <!-- {{{ -->
 ### What\Who
 __What__ asks about things.  
 __Who__ asks about people.  
 ### Would
-<<<<<<< HEAD
 _Q_ __Would__ you __like__ some tea? -- In a question, would comes before
 the subject.  
 _A_ Yes, I __would__. (I would like some tea.)  
@@ -49,20 +80,6 @@ _A_ Yes, I __would__. (I would like some tea.)
 + he &rarr; his;  
 + we &rarr; out;  
 + they &rarr; their;  
-=======
-__Would__ you __like__ some tea? -- In a question, would comes before
-the subject.  
-Yes, I __would__. (I would like some tea.)  
-<!-- }}} -->
-
-## Progressive form.
-+ I -> my;  
-+ you -> your;  
-+ she -> her;  
-+ he -> his;  
-+ we -> out;  
-+ they -> their;  
->>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 They come in front of nouns.  
 
 ## Nonaction verbs  
