@@ -7,11 +7,19 @@ _book: Basic English Grammas. second edition._
 __Preposition phrase__ - a preposition + a noun. _(at the library)_   
 
 ## Prepositions of location  
+<<<<<<< HEAD
 My book is __on__ my desk.  
 	+ on = a preposition
 	+ my desk = object of the preposition
 	+ on my desk = prepositional phrase
 Tom lives __in__ _the United States_ .  
+=======
+My book is __on__ my desk.
+	+ on = a preposition
+	+ my desk = object of the preposition
+	+ on my desk = prepositional phrase
+Tom lives __in__ _the United States_ .
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 	+ __in__ a country and __in__ a city  
 	+ __on__ a streen, avenue, road, etc  
 	+ __at__ an adress
@@ -28,6 +36,7 @@ __talk to__ each other
 __What__ asks about things.  
 __Who__ asks about people.  
 ### Would
+<<<<<<< HEAD
 _Q_ __Would__ you __like__ some tea? -- In a question, would comes before
 the subject.  
 _A_ Yes, I __would__. (I would like some tea.)  
@@ -40,6 +49,20 @@ _A_ Yes, I __would__. (I would like some tea.)
 + he &rarr; his;  
 + we &rarr; out;  
 + they &rarr; their;  
+=======
+__Would__ you __like__ some tea? -- In a question, would comes before
+the subject.  
+Yes, I __would__. (I would like some tea.)  
+<!-- }}} -->
+
+## Progressive form.
++ I -> my;  
++ you -> your;  
++ she -> her;  
++ he -> his;  
++ we -> out;  
++ they -> their;  
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 They come in front of nouns.  
 
 ## Nonaction verbs  

@@ -81,8 +81,11 @@ Plug 'plytophogy/vim-virtualenv'
 " ult search engine
 Plug 'kien/ctrlp.vim'
 
+<<<<<<< HEAD
 Plug 'tpope/vim-surround'
 
+=======
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 
 """ GIT SHIT """
 " git support 
@@ -364,7 +367,11 @@ augroup filetype_tex
   " clear all commands in group
   autocmd!  
   autocmd FileType tex,latex
+<<<<<<< HEAD
     \ setlocal foldmethod=marker |
+=======
+    \ setlocal foldmethod=syntax |
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
     \ setlocal tabstop=4 |
     \ setlocal softtabstop=4 |
     \ setlocal shiftwidth=4

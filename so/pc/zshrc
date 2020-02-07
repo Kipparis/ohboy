@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # }}}
+<<<<<<< HEAD
 # ~~~ How something works :p ~~~ {{{
 #
 # Default applications for Chrome
@@ -115,6 +116,61 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 # }}}
+=======
+
+# automatic aftorisation for ssh
+    # mkdir ~/.ssh
+    # ssh-keygen -t rsa -q -N '' -f ~/.ssh/id_rsa
+    # ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.org.ua
+    # ssh user@remoute.org.ua
+
+# Wacom aliases
+# TODO: move to script with calculating ratio
+# xrandr
+alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" \
+  MapToOutput HEAD-0'   
+# alias wacom_map_to_big='xsetwacom set "Wacom Bamboo One M Pen stylus" MapToOutput DVI-D-2 '
+alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" \
+  MapToOutput HEAD-1'
+
+# midi synth alias sound="qsynth"
+
+# check for RAM (system lag while several applications are opened)
+# free -h
+#
+# slow boot time or application first time launch
+# hdparm -t /deb/sdX
+#
+# CPU load is hign even with enough RAM available =>
+# disable running daemons and/or processes
+# htop
+# pstree
+# or another system monitoring tool
+#
+# direct rendering are slow (GPU part)
+# check if direct rendering enabled:
+# glxinfo | grep "direct rendering"
+#
+# check for drivers
+# lspci -v
+# lspci -k | grep -A 2 -E "(VGA|3D)"
+#
+# header number
+# uname -r
+#
+# blacklist old GPU driver (open source)
+# sudo nvim /etc/modprobe.d/nouveau_blacklist.conf  
+
+alias dev="cd ~/files/proj/nextgen/levelteleg && source venv/bin/activate && cd base"
+alias ka="nvim"
+
+# unmout encrypted fs
+# fusermount -u ~/encrypted
+# mount again
+# encfs ~/.encrypted ~/encrypted
+
+
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 # ~~~ Stream Section ~~~ {{{
 alias twitch_chat='chromium --app=https://www.twitch.tv/popout/kipparis49/chat\?popout\='
 alias restream_chat='chromium --app=https://chat.restream.io/chat'
@@ -127,10 +183,13 @@ alias restream_chat='chromium --app=https://chat.restream.io/chat'
 alias visualize_micro="python3 $HOME/.scripts/spectrogram.py -g 160 -d pulse"
 # }}}
 #~~~ System Maintaining ~~~{{{
+<<<<<<< HEAD
 # Kernel {{{
 # header number
 # uname -r
 # }}}
+=======
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 # Memory{{{
 
 	# out installed packages with size
@@ -146,6 +205,7 @@ alias visualize_micro="python3 $HOME/.scripts/spectrogram.py -g 160 -d pulse"
 
 # }}}
 # Graphics{{{
+<<<<<<< HEAD
 # xrandr
 	# default monitor
 alias set_default_monitor='xrandr --output DVI-D-1 --primary --right-of VGA-0'
@@ -177,6 +237,12 @@ alias set_default_monitor='xrandr --output DVI-D-1 --primary --right-of VGA-0'
 # slow boot time or application first time launch
 # hdparm -t /deb/sdX
 # }}}
+=======
+	# default monitor
+alias set_default_monitor='xrandr --output DVI-D-1 --primary --right-of VGA-0'
+#}}}
+
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 # }}}
 # ~~~ Colors ~~~ {{{
 # Where to change colors:
@@ -262,6 +328,7 @@ alias turn_off_bell='xset -b'
 alias set_local_time='sudo ntpd -qg'
 alias fix_time='timedatectl set-ntp true'
 alias remove_cached='git rm -r --cached .'
+<<<<<<< HEAD
 
 # move program to background
 	# C-z => bg => disown
@@ -286,11 +353,22 @@ alias wacom_map_to_small='xsetwacom set "Wacom Bamboo One M Pen stylus" \
 	# fusermount -u ~/encrypted
 	# mount again
 	# encfs ~/.encrypted ~/encrypted
+=======
+# view files for package
+    # pacman -Ql st
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 # }}}
 # programms in use {{{
 alias video_recorder="simplescreenrecorder"
 alias show_keys="screenkey" # --scr 1 for showing on big screen
 alias music_player="ario"
+<<<<<<< HEAD
 
 # midi synth alias sound="qsynth"
 # }}}
+=======
+# }}}
+
+# when run command from terminal
+# C-z => bg => disown
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9

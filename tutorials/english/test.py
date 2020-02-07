@@ -2,7 +2,10 @@
 
 import os
 from utils.dtypes import StringBool
+<<<<<<< HEAD
 from utils.file   import parse_dict
+=======
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 
 
 import argparse
@@ -11,6 +14,7 @@ parser = argparse.ArgumentParser(description="write a test, store "
 parser.add_argument("db_file_name", help="db filename for store results")
 parser.add_argument("-c", "--create", help="create new db",
         action="store_true")
+<<<<<<< HEAD
 parser.add_argument("-w", "--words_file", type=str, default="words.dict",
         help="words file for sync with db", metavar="file_name")
 parser.add_argument("-u", "--update", help="update words in database",
@@ -50,6 +54,20 @@ if args.create:
         for entry in category:      
 
 
+=======
+args = parser.parse_args()
+
+if args.create: 
+    inp = StringBool(input("Are you sure you want to recreate database "
+            "(operation will remove any file/folder/symnlink on "
+            "specified path - '{}')\ny,[n]: ".format(args.db_file_name)))
+    if inp:
+        if os.path.exists(args.db_file_name):   # check file exists
+            os.remove(args.db_file_name)        # if so, remove
+
+import sqlite3 # https://docs.python.org/3/library/sqlite3.html
+db_conn = sqlite3.connect(args.db_file_name)
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 
 # TODO: in loop:
 #   1. ask user how many words he wants to learn (default = 7)
@@ -59,6 +77,9 @@ if args.create:
 #       output statistic
 #       on welcom page output this statistic
 #       and percantage of overall words knowledge
+<<<<<<< HEAD
 
 
 db_conn.close() # close connection
+=======
+>>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
