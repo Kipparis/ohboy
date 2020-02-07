@@ -225,6 +225,56 @@ a default constuctor__.
 __Init list doesn't specify order__ in witch variables are initialized, they
 are init in order they appear in class definition.  
 
+__Delegating contructors *(c++11)*__
+```cpp
+// deligate-to constructor
+Sales_data(std::string s, unsigned cnt, double price):
+	bookNo(s), units_sold(cnt), revenue(cnt*price) {}
+// contructor that delegate to another constructor
+Sales_data(): Sales_data("", 0, 0) {}
+```
+
+### Default Constructor
+Default constructor is used automatically on object default or value
+initialization.  
+__Default__ initializetion happens:  
+    + Define `nonstatic` variables or `arrays` at block scope without initializers  
+    + Class itself has members of class usesthe synthesized default 
+  constructor  
+    + Members of class type are not explicitly initialized in a
+  constructor initializer list  
+__Value__ initialization happens:  
+    + During array initialization when we provide fewer initializers
+  than the size of the array  
+    + Define a local static object without an initializer  
+    + Explicitly request value initialization by writing an expressions
+  of the form T() where T is the name of a type (vector use that to
+  value initialize its element inializer).  
+  
+Using default constructor:   
+```cpp
+Sales_data obj();   // ok: but it defines a function, not an object
+Sales_data obj;     // ok: object
+```
+
+## Implicit Class-Type conversions  
+_aka converting contructors._  
+Every constructor that can be called with a __single argument__ defines an
+__implicit conversion__ to a class type.  
+_Note:_ Compiler applies only one class-type conversion:   
+```cpp
+// error: requires two user-defined conversions:
+//      (1) convert "9-999-99999-9" to string
+//      (2) convert that(temporary) string to Sales_data
+item.combine("9-999-99999-9");
+```
+We can do this, by explicitly calling conversion
+```cpp
+item.combine(string("9-999-99999-9"));      // ok
+item.combine(Sales_data("9-999-99999-9"));  // ok
+```
+
+
 ## Data types  
 __mutable__ data member can be changed inside of const functions
 Defining class member types: `typedef std::string::size_type pos;`  

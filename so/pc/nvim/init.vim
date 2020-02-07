@@ -366,8 +366,9 @@ augroup filetype_md
   autocmd!  
   autocmd FileType markdown
     \ setlocal tabstop=4 |
+    \ setlocal shiftwidth=4 |
     \ setlocal softtabstop=4 |
-    \ setlocal shiftwidth=4
+    \ setlocal expandtab  	" tab -> spaces
 augroup END
 
 
