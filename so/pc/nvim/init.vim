@@ -81,11 +81,7 @@ Plug 'plytophogy/vim-virtualenv'
 " ult search engine
 Plug 'kien/ctrlp.vim'
 
-<<<<<<< HEAD
 Plug 'tpope/vim-surround'
-
-=======
->>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
 
 """ GIT SHIT """
 " git support 
@@ -173,7 +169,6 @@ let g:ycm_cxx_default_flags = ['-Wall', '-Wconversion', '-std=c++11']
 let g:ycm_goto_buffer_command = 'split-or-existing-window' 
 let g:ycm_confirm_extra_conf = 0
 "}}}
-
 "===== SimpylFold configuration ====="{{{
 " :help SimpylFold
 let g:SimpylFold_docstring_preview=1 " preview docstring 
@@ -181,8 +176,7 @@ let g:SimpylFold_fold_docstring=1 " fold docstrings
 let g:SimpylFold_fold_import=1 " fold imports
 " Commands can be found at :help fold-commands
 " }}}
-
-"==== Nerd Tree settings ===="{{{
+"===== Nerd Tree settings ====="{{{
 " autoclose when only tree open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
   " to see available characters :digraph
@@ -192,7 +186,6 @@ let g:NERDTreeDirArrowCollapsible = '▼'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "}}}
-
 "===== IndentLine configuration ====="{{{
 " tab show
 let g:indentLine_setColors = 0
@@ -200,25 +193,21 @@ let g:indentLine_setColors = 0
 let g:indentLine_char = '¦'
 let g:indentLine_setConceal = 0 
 " save conceallevel}}}
-
 "===== Ultisnips configuration ====="{{{
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical" " vertical split to edit ft snippets
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips'] " directory to store
 "}}}
-
 "===== Airline configuration ====="{{{
 " for airline to work
 let g:airline_powerline_fonts = 1
 " airline theme
 let g:airline_theme='minimalist'
 "}}}
-
 "===== DelimitMate configuration ====="{{{
 " {} will translate on 2 new lines when *Enter* between them
 let g:delimitMate_expand_cr = 2
 "}}}
-
 "===== Git configuration ====="{{{
 " update time
 set updatetime=100
@@ -229,7 +218,6 @@ autocmd FocusGained,CursorHold ?* if getcmdwintype() == '' |
 " not include merge conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 "}}}
-
 "===== DevIcons configuration ====="{{{
 " :help devicons
 " let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['js']='ƛ'
@@ -241,7 +229,6 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
 " let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['py'] = '+'
 " }}}
-"
 " }}}
 "===== Specific language configs ====="{{{
 "====================================="
@@ -367,11 +354,7 @@ augroup filetype_tex
   " clear all commands in group
   autocmd!  
   autocmd FileType tex,latex
-<<<<<<< HEAD
     \ setlocal foldmethod=marker |
-=======
-    \ setlocal foldmethod=syntax |
->>>>>>> 7e7042a7d55ba2348b5198a0c112199d34cd73e9
     \ setlocal tabstop=4 |
     \ setlocal softtabstop=4 |
     \ setlocal shiftwidth=4
@@ -447,11 +430,7 @@ command! -range -nargs=0 Overline        call s:CombineSelection(<line1>,<line2>
 command! -range -nargs=0 Underline       call s:CombineSelection(<line1>,<line2>, '0332')
 command! -range -nargs=0 DoubleUnderline call s:CombineSelection(<line1>,<line2>, '0333')
 command! -range -nargs=0 Strikethrough   call s:CombineSelection(<line1>,<line2>, '0336')
-"}}}
-
-
-
-
+" }}}
 """ Appearence (colors, panels on sides, folding) {{{
   " change transparent background
 nnoremap <leader>nb :set background=dark<cr>
@@ -464,6 +443,4 @@ nmap <F8> :TagbarToggle<CR>
   " open nerd tree
 map <C-t> :NERDTreeToggle<CR>
 "}}}
-
-
 "}}}
