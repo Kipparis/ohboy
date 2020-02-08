@@ -274,6 +274,45 @@ item.combine(string("9-999-99999-9"));      // ok
 item.combine(Sales_data("9-999-99999-9"));  // ok
 ```
 
+### Prevent the use of constructor in implicit conversion  
+```cpp
+explicit Sales_data(const std::string &s): bookNo(s) { }
+explicit Sales_data(std::istream&);
+```
+`explicit` keyword is meaningful only on constructors with single
+argument.  
+__Note!__ Explicit keyword is used only on the constructor declaration
+inside the class.  
+More `explicit` examples:  
+```cpp
+Sales_data item1(null_book);    // ok: direct initialization
+Sales_data item2 = null_book;   // error: can't use copy form of init
+```
+We can use explicit constructors for an implicit conversion:  
+```cpp
+item.combine(Sales_data(null_book));
+```
+
+### Library Classes
+    + `string` constructor with arg of `const char*` is not explicit  
+    + `vector` constructor that takes a size is explicit  
+
+## Aggregate Classes  
+__aggregate class__ gives users direct access to its members and has
+special initialization syntax. A class is aggregate if:  
+    + All of its data members are public  
+    + It does not define any constructors  
+    + It has no in-class initializers  
+    + It has no base classes or `virtual` functions  
+_example_:  
+```cpp
+struct Data {
+    int ival;
+    string s;
+};
+```
+Initialize data members by providing a praced list of member
+initializers: `Data val1 = { 0, "Anna" };`  
 
 ## Data types  
 __mutable__ data member can be changed inside of const functions
@@ -281,6 +320,17 @@ Defining class member types: `typedef std::string::size_type pos;`
 or: `using pos = std::string::size_type;`  
 
 to get name __from outer scope__ use ::height;
+
+## Literal Classes  
+Literal class - a class whose data members are __all of literal
+type__.  
+Literal classes may have function members that are `constexpr`. These
+member functions are implicitly `const`.  
+Restrictions to be literal class:   
+    + must have at least one `constexpr` contructor  
+    + must use default definition for its destructor
+
+### Constexpr constructors
 
 # IO
 manipulating with input and output:
