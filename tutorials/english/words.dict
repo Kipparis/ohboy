@@ -26,11 +26,6 @@ jacket - куртка
 pants- брюки
 slacks - широкие брюки
 
-[Fruits]
-pomegranate - гранат
-chicory - цикорий
-ripe - созревший
-
 [Human parts]
 ear - ухо
 eye - глаз
@@ -67,9 +62,11 @@ bench - скамейка
 
 [Nature]
 bush - куст
+bunch - гроздь \ пучок
 
 [Things]
 pencil sharpener - точилка
+tube - тюбик 
 
 [Kitchen]
 bowl - миска
@@ -93,6 +90,8 @@ stove - плита
 pepper shaker - перечника
 salt shaker - солонка
 tray - поднос
+can - банка
+jar - баночка
 
 [Food]
 flour - мука
@@ -101,6 +100,16 @@ pepper - перец
 gum - жевачка
 chew - жевать
 sour - кислый
+lettuce - салат
+pomegranate - гранат
+chicory - цикорий
+ripe - созревший
+cereal - зерновой
+corn - кукуруза
+pickles - соления
+muesli - мюсли
+pineapple - ананас
+
 
 [Room]
 furniture - мебель

@@ -62,6 +62,67 @@ pronunciation: /az/
 __tomato__ - __tomatoes__ -- end: consonant + _-o_, plural: add _-es_  
 __zoo__ - __zoos__ -- end: vowel + _-o_, plural: add _-s_  
 
+## Irregular plural forms
+| Singular | Plural       |
+| ---      | ---          |
+| child    | __children__ |
+| foot     | __feet__     |
+| man      | __men__      |
+| mouse    | __mice__     |
+| tooth    | __teeth__    |
+| woman    | __women__    |
+| fish     | __fish__     |
+| (none)   | __people__   |
+
+## Count and noncount
+__Count__ - we can count this (like books)  
+__Noncount__ - we can't count this (like sand, or luck)  
+A noncount none:  
+    + Do not use _a_.  
+    + Do not use _one_.  
+    + Does not have a plural form. (however are used with `is there`)
+_(How much coffee is there in that pot?)_  
+_(noncount nones usually acts like a group of nouns: jewelry, meat,
+fruit, mail, advice)._  
+Use __many__ with COUNT NOUNS.  
+Use __much__ with NONCOUNT NOUNS.  
+Use __a few__ with COUNT NOUNS.  
+Use __a little__ with NONCOUNT NOUNS.  
+
+### Common noncount nouns
+| advice      | mail    | bread  | pepper |
+| furniture   | money   | cheese | rice   |
+| help        | music   | coffee | salt   |
+| homework    | peace   | food   | soup   |
+| information | fraffic | fruit  | sugar  |
+| jewelry     | weather | meat   | tea    |
+| luck        | work    | milk   | water  |
+
+## Measurements with noncount nouns  
+I'd like __some__ water.  
+I'd like __a glass of__ water.  
+I'd like __a cup of__ coffee.  
+I'd like __a piece of__ fruit.  
+Units of measure are used with noncount nouns to __express a specific
+quantity__, for example: _a glass of_, _a cup of_, _a piece of_.  
+
+## Using AN vs. A  
+__A__ and __an__ are used in front of singular count nouns.  
+Use __an__ in front of words that begin with the vowels.  
+In some words that begin with "h", the "h" is not pronounced. Instead,
+the word is begins with a vowel sound and __an__ is used: _an hour_, _an
+honor_.  
+Use __a__ if a word that begins with "u" has a /yu/ sound: _a
+university_, _a usual event_.  
+Use __a__ if the _"h"_ in the beginning of word is pronounced.  
+
+## Using _A/AN_ vs. _SOME_
+__A/An__ is used in front of __singular__ count nouns.  
+> I have __a__ pen.  
+__Some__ is used in front of __plural__ count nouns.  
+> I have __some__ pens.  
+__Some__ is used in front of noncount nouns.  
+> I have __some__ rice.  
 
 ## Questions. <!-- {{{ -->
 ### What\Who
