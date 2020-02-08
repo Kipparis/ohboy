@@ -129,7 +129,11 @@ set noshowmode
 set encoding=UTF-8
 set fileformat=unix
 set scrolloff=3 " keep three lines between the cursor and the edge of the screen
-syntax on
+syntax on 
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab  	" tab -> spaces
 " set tabstop=2    " number of spaaces per tab
 " set expandtab    " convert tab into spaces
 " set shiftwidth=2 " tab = 2 spaces
@@ -363,15 +367,23 @@ augroup END
 "===== MarkDown development ====="{{{
 augroup filetype_md
   " clear all commands in group
-  autocmd!  
-  autocmd FileType markdown
-    \ setlocal tabstop=4 |
-    \ setlocal shiftwidth=4 |
-    \ setlocal softtabstop=4 |
-    \ setlocal expandtab  	" tab -> spaces
+    autocmd!  
+    autocmd FileType markdown 
+        \ setlocal tabstop=4 |
+        \ setlocal shiftwidth=4 |
+        \ setlocal softtabstop=4 |
+        " tab -> spaces
+        \ setlocal expandtab |
+    " shortcuts for arrows
+    autocmd FileType markdown inoreabbrev <buffer> -> $rarr;
+    autocmd FileType markdown inoreabbrev <buffer> <- $larr;
+    autocmd FileType markdown inoreabbrev <buffer> -^ $uarr;
+    autocmd FileType markdown inoreabbrev <buffer> v- $rarr;
+    " might add smiles
+    " https://gist.github.com/rxaviers/7360908
 augroup END
-
-
+" read this 
+" https://vim.works/2019/03/16/using-markdown-in-vim/
 "}}}
 "===== Txt(notes) development{{{
 au BufNewFile,BufRead *.txt
