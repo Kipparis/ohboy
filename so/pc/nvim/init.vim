@@ -134,10 +134,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab  	" tab -> spaces
-" set tabstop=2    " number of spaaces per tab
-" set expandtab    " convert tab into spaces
-" set shiftwidth=2 " tab = 2 spaces
-" set autoindent		"copy current indent on new lline
 " set smartindent		"autoindent after {
 set number relativenumber " show lines numbering
 set wildmenu " autocomplete of vim commands
@@ -200,7 +196,23 @@ let g:indentLine_setConceal = 0
 "===== Ultisnips configuration ====="{{{
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical" " vertical split to edit ft snippets
+
+    " :help UltiSnips-authoring-snippets
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips'] " directory to store
+    " Notes: absolute path will speed up searching
+
+    " :help UltiSnips-triggers
+    " Set ultisnips triggers
+    " works after restarting :/
+let g:UltiSnipsExpandTrigger="<c-j>"  " set same as jump forward           
+let g:UltiSnipsListSnippets="<c-e>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"                                       
+let g:UltiSnipsJumpBackwardTrigger="<c-k>" 
+    " instead of same expand and jump
+" inoremap <c-j> :call UltiSnips#ExpandSnippetOrJump<CR>
+
+    " :help UltiSnips-visual-placeholder
+
 "}}}
 "===== Airline configuration ====="{{{
 " for airline to work
@@ -379,11 +391,24 @@ augroup filetype_md
     autocmd FileType markdown inoreabbrev <buffer> <- $larr;
     autocmd FileType markdown inoreabbrev <buffer> -^ $uarr;
     autocmd FileType markdown inoreabbrev <buffer> v- $rarr;
+    " bold surround
+    autocmd FileType markdown let b:surround_{char2nr('b')} = "**\r**"
+    " italic surround
+    autocmd FileType markdown let b:surround_{char2nr('i')} = "_\r_"
+    " 
     " might add smiles
     " https://gist.github.com/rxaviers/7360908
+    "
+    " add spaces at the end
+    autocmd FileType markdown nnoremap <buffer> <leader>as A<space><space><esc>
+
+    " help UltiSnips-snippet-actions
+    " very useful for snippets
 augroup END
 " read this 
 " https://vim.works/2019/03/16/using-markdown-in-vim/
+"
+" make markdown autocomplete _ and __
 "}}}
 "===== Txt(notes) development{{{
 au BufNewFile,BufRead *.txt
@@ -420,12 +445,6 @@ inoremap jk <esc>
 tnoremap jk <C-\><C-n>
 "}}}
 """ Editing (writing text in process) {{{
-  " Set ultisnips triggers
-  " works after restarting :/
-let g:UltiSnipsExpandTrigger="<c-j>"  " set same as jump forward                                  
-let g:UltiSnipsListSnippets="<c-e>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"                                       
-let g:UltiSnipsJumpBackwardTrigger="<c-k>" 
 "}}}
 """ Text formatting (after writing text, make more clean) {{{
   " create new region from selected " :h NarrowRegion

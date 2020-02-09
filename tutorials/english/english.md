@@ -4,7 +4,7 @@ _book: Basic English Grammas. second edition._
 
 <!-- How I understood, at is used when I talk about something specific. -->
 ## Prepositions.
-__Preposition phrase__ - a preposition + a noun. _(at the library)_   
+__Preposition phrase__ - a preposition + a noun. _(at the library)_  
 
 ## Prepositions of location  
 My book is __on__ my desk.  
