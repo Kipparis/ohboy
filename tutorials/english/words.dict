@@ -11,6 +11,8 @@ consonant - согласный
 spelling - написание
 preposition - предлог
 literacy - граммотность
+indefinite - неопределённый
+affirmative - утвердительный
 
 [Colors]
 tan, beige - бежевый, загарелый
@@ -25,6 +27,9 @@ tie, necktie - галстук
 jacket - куртка
 pants- брюки
 slacks - широкие брюки
+jewelry - драгоценности 
+neclace - ожерелье
+shoe store - обувной магазин
 
 [Human parts]
 ear - ухо
@@ -63,10 +68,12 @@ bench - скамейка
 [Nature]
 bush - куст
 bunch - гроздь \ пучок
+valley - долина
 
 [Things]
 pencil sharpener - точилка
 tube - тюбик 
+suitcases - чемоданы
 
 [Kitchen]
 bowl - миска
@@ -95,7 +102,7 @@ jar - баночка
 
 [Food]
 flour - мука
-strawberries - клубника
+strawberry - клубника
 pepper - перец
 gum - жевачка
 chew - жевать
@@ -122,6 +129,7 @@ living room - гостинная
 rug - коврик\плед
 bed - постель
 pillow - подушка
+ceil - потолок
 
 [Preposition of place]
 beside\near - рядом
@@ -129,11 +137,14 @@ far away from - далеко
 
 [Lighing]
 candle - свеча
+match - спичка
 
 [Learning]
 take notes - делать записи
 librarian - библиотекарь
 circulation desk - ресепшн
+chalk - мелки
+chalkboard - доска
 
 [Money]
 write a check - выписать чек
@@ -154,6 +165,7 @@ people - люди
 dream - мечтать
 poverty - бедность
 admire - восхищаться
+inch - дюйм
 
 [Nationalities] 
 American
@@ -167,4 +179,5 @@ Korean
 Malaysian
 Mexican
 Saudi Arabian 
+
 

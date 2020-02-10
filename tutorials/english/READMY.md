@@ -42,10 +42,11 @@ subject of the sentence._
 (d) The weather is __cold__.  
 
 ## Subject pronouns and object pronouns
-| Subject pronouns     | Object pronouns      |
-| ---                  | ---                  |
-| __I__ speak English  | Bob knows __me__.    |
-| __we__ speak English | Bob talks to __us__. |
+| Subject pronouns     | Object pronouns      |  
+| ---                  | ---                  |  
+| __I__ speak English  | Bob knows __me__.    |  
+| __we__ speak English | Bob talks to __us__. |  
+  
 I know __Tony__. __He__ is a friendly person. -- Pronouns has the same
 meaning as a noun.  
 
@@ -78,9 +79,9 @@ __zoo__ - __zoos__ -- end: vowel + _-o_, plural: add _-s_
 __Count__ - we can count this (like books)  
 __Noncount__ - we can't count this (like sand, or luck)  
 A noncount none:  
-    + Do not use _a_.  
-    + Do not use _one_.  
-    + Does not have a plural form. (however are used with `is there`)
++ Do not use _a_.  
++ Do not use _one_.  
++ Does not have a plural form. (however are used with `is there`)
 _(How much coffee is there in that pot?)_  
 _(noncount nones usually acts like a group of nouns: jewelry, meat,
 fruit, mail, advice)._  
@@ -90,14 +91,14 @@ Use __a few__ with COUNT NOUNS.
 Use __a little__ with NONCOUNT NOUNS.  
 
 ### Common noncount nouns
-| advice      | mail    | bread  | pepper |
-| furniture   | money   | cheese | rice   |
-| help        | music   | coffee | salt   |
-| homework    | peace   | food   | soup   |
-| information | fraffic | fruit  | sugar  |
-| jewelry     | weather | meat   | tea    |
-| luck        | work    | milk   | water  |
-
+| advice      | mail    | bread  | pepper |  
+| furniture   | money   | cheese | rice   |  
+| help        | music   | coffee | salt   |  
+| homework    | peace   | food   | soup   |  
+| information | fraffic | fruit  | sugar  |  
+| jewelry     | weather | meat   | tea    |  
+| luck        | work    | milk   | water  |  
+  
 ## Measurements with noncount nouns  
 I'd like __some__ water.  
 I'd like __a glass of__ water.  
@@ -106,6 +107,25 @@ I'd like __a piece of__ fruit.
 Units of measure are used with noncount nouns to __express a specific
 quantity__, for example: _a glass of_, _a cup of_, _a piece of_.  
 
+## Indefinite pronouns
+###  **_something_**, **_someone_**, **_anything_**, **_anyone_**
+Mary bought **_something_** at the store -- In a statement, use
+_something_ or _someone_.  
+Mary didn't buy **_anything_** at the store -- In a negative sentence, use
+_anything_ or _anyone_.  
+Did Mary buy **_something_** at the store? -- In a question, use either
+_something/someone_ or _anything/anyone_.  
+### **_nothing_** and **_no one_**
+(a) I **_didn't say anything_**  
+(b) I **_said nothing_**  
+(a) and (b) have the _same_ meaning.  
+_Anything_ is used when the verb is negative.  
+_Nothing_ is used when the verb is affirmative.  
+(c) I **_didn't say anything_**.  
+(d) I **_said nothing_**.  
+(c) and (d) have the same meaning.  
+
+# Articles <!-- {{{ -->
 ## Using AN vs. A  
 __A__ and __an__ are used in front of singular count nouns.  
 Use __an__ in front of words that begin with the vowels.  
@@ -118,11 +138,41 @@ Use __a__ if the _"h"_ in the beginning of word is pronounced.
 
 ## Using _A/AN_ vs. _SOME_
 __A/An__ is used in front of __singular__ count nouns.  
-> I have __a__ pen.  
+> I have __a__ pen. 
+  
 __Some__ is used in front of __plural__ count nouns.  
 > I have __some__ pens.  
+  
 __Some__ is used in front of noncount nouns.  
 > I have __some__ rice.  
+
+## Using _THE_
+A: Where's David?  
+B: He's in **the** kitchen.  
+A speaker users **the** when the speaker and the listener have the same
+thing or person in mind. **_The_** shows that a noun is specific.  
+Mike has **a** pen and **a** pencil.  
+**The** pen is blue.  
+**The** pencil is yellow.  
+**_The_** is used with each of the three kinds of nouns.  
+
+## Using \_(NO ARTICLE) to make generalizations  
+\_ Apples are good for you. -- no article is used to make
+generalizations with:  
++ plural count nouns  
++ noncount nouns  
+Tom and Ann ate some fruit. **The** apples were very good, but **the**
+bananas were to ripe. - here is something specific  
+
+## Using **_SOME_** and **_ANY_**
+| Statement | Negative | Question |
+| ---       | ---      | ---      |
+| Alice has **some money** | Alice doesn't have **any money** | Does Alice have **any money**?  Does Alice have **some money**?| 
+| Use _some_ in a statement | Use _any_ in a negative sentence. | Use either _some_ or _any_ in a question |  
+I don't have **any money**. (noncount noun)  
+I don't have **any matches**. (plural count noun)   
+_Any_ is used with noncount nouns and plural count nouns.  
+<!-- }}} -->
 
 ## Questions. <!-- {{{ -->
 ### What\Who
@@ -235,9 +285,9 @@ consonant + __*e*__ -> drop the __-e__ and add __-ing__.
 smile -> smiling  
 one vowel + one consonant -> double the consonant and add __-ing__ _(do
 not double w,x, and y)_.  
-	+ sit -> sitting  
-	+ snow -> snowing  
-	+ fix -> fixing  
++ sit -> sitting   
++ snow -> snowing  
++ fix -> fixing  
 <!-- }}} -->
 ## Meaning <!-- {{{ -->
 ### See, look at, watch, hear, and listen to 

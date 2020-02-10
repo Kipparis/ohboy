@@ -158,6 +158,14 @@ colorscheme gruvbox
 hi Normal ctermbg=NONE
 " for c,c++ to allow debugging
 packadd termdebug " :help terminal-debug
+" when pasting vim thinks that it all entered manually
+" and applies all autoindent
+" to disable v
+set pastetoggle=<F2>
+" display trailing spaces 
+set list
+set listchars=trail:.
+
 
 "}}}
 "===== Generic plugins configuration ====="{{{
@@ -401,14 +409,13 @@ augroup filetype_md
     "
     " add spaces at the end
     autocmd FileType markdown nnoremap <buffer> <leader>as A<space><space><esc>
-
-    " help UltiSnips-snippet-actions
-    " very useful for snippets
+    " autocmd BufReadPost *.md highlight MarkdownTrailingSpaces ctermbg=green guibg=green
+    " autocmd BufReadPost *.md syntax match MarkdownTrailingSpaces "\s\{2}$"
+    " autocmd BufReadPost *.md syntax match GruvboxBg3 "\s\{2}$"
 augroup END
 " read this 
 " https://vim.works/2019/03/16/using-markdown-in-vim/
-"
-" make markdown autocomplete _ and __
+
 "}}}
 "===== Txt(notes) development{{{
 au BufNewFile,BufRead *.txt
@@ -429,6 +436,11 @@ let mapleader=','
 let maplocalleader='.'
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>  " edit vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>  " source vimrc
+" be more efficient
+nnoremap ; :
+" forgot to open file with sudo
+" just type :w!!
+cmap w!! w !sudo tee % >/dev/null
 
 """ Movement {{{
   " Make j and k move to the next row, not file line

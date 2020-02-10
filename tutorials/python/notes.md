@@ -13,7 +13,7 @@ if __name__ == "__main__":  # for execution
 ## Debugging <!-- {{{ -->
 __Tracebacks__ should be read from last line.   
 __!Warning!__ catching all exceptions will lead to when user presses Ctrl+C the
-  program won't stop and you lock the user.
+  program won't stop and you lock the user.  
 ### Exception chaining
 ```python
 class InvalidDataError(Exception): pass
@@ -43,7 +43,7 @@ orrrrrr
 import pdb
 pdb.set_trace()
 ```
-Use of debugger __IDLE__
+Use of debugger __IDLE__  
 <!-- }}} -->
 ## Testing <!-- {{{ -->
 __Unit testing__ - e.g. testing individual functions, classes, and methods, to ensure that
@@ -54,11 +54,11 @@ In functions that __doesn't return anything__, can be usefull to return fake
 objects - thurd-party modules that provide "mock" objects.  
   
 Python provides two unit testing modules:  
-  + doctest  
-  + unittest  
++ doctest  
++ unittest  
 __Third-party__ testing tools:
-  + nose  
-  + py.test  
++ nose  
++ py.test  
 
 Writing doctests:  
 ```python
@@ -85,25 +85,25 @@ print(runner.run(suite))
 ```
 
 __Unittest__ module defines four key concepts:   
-	+ test fixture - the code necessary to set up a test  
-	+ test suite - collection of test cases  
-	+ test case - basic unit of testing  
-	+ test runner - object that executes one or more test suites  
++ test fixture - the code necessary to set up a test  
++ test suite - collection of test cases  
++ test case - basic unit of testing  
++ test runner - object that executes one or more test suites  
 
 __Test suite__ created by inheritace _unittest.TestCase_ class.  
 __Test case__ = each method with name starting with "test".  
-	+ set up in `setUp();`  
-	+ cleanup in `tearDown();`  
++ set up in `setUp();`  
++ cleanup in `tearDown();`  
 various __unittest.TestCase__ methods:
-	+ `assertTrue()`  
-	+ `assertEqual()`  
-	+ `assertAlmostEqual()` -- testing floating-point numbers  
-	+ `assertRaises()`  
-	+ many more
++ `assertTrue()`  
++ `assertEqual()`  
++ `assertAlmostEqual()` -- testing floating-point numbers  
++ `assertRaises()`  
++ many more
 ends with:
 ```python
 if __name__ == "__main__":
-	unittest.main()
+    unittest.main()
 ```
 
 Running from __external file__:
@@ -120,45 +120,45 @@ print(runner.run(suite))
 __asserting exceptions__:
 ```python
 with self.asssertRaises(AttributeError):
-	...
+    ...
 ```
 <!-- }}} -->
 ## Profiling <!-- {{{ -->
 Best practices:  
-	+ prefer tuples to lists when a __read-only sequence is needed__  
-	+ __use generators__ rather than creating large upbles or lists  
-	+ use python's __built-in data structures__  
-	+ instead of concatenating strings, turn them into list of strings and 
-\		then join the list of strings into a single string at the end  
-	+ when object accessed a large number of times using attribute access, 
-\		it may be better to create and use local variable that refers to the
-\		object to provide faster access  
++ prefer tuples to lists when a __read-only sequence is needed__  
++ __use generators__ rather than creating large upbles or lists  
++ use python's __built-in data structures__  
++ instead of concatenating strings, turn them into list of strings and 
+\   then join the list of strings into a single string at the end  
++ when object accessed a large number of times using attribute access, 
+\   it may be better to create and use local variable that refers to the
+\   object to provide faster access  
 
 two modules for investigating the performance of out code:  
-	+ timeit - timing small pieces of out code  
-	+ cProfile - find bottlenecks  
++ timeit - timing small pieces of out code  
++ cProfile - find bottlenecks  
 
 ### timeit
 ```python
 if __name__ == "__main__":
-  repeats = 1000
-  for function in ("func_a", "func_b", "func_c"):
-    t = timeit.Timer("{0}(X, Y)".format(function), "from __main__ import
-      {0}, X, Y".format(function))
+    repeats = 1000
+    for function in ("func_a", "func_b", "func_c"):
+        t = timeit.Timer("{0}(X, Y)".format(function), "from __main__ import
+            {0}, X, Y".format(function))
     sec = t.timeit(repeats)/ repeats
     print("{function}() {sec:.6f} sec".format(**locals()))
 ```
 run it from cli:  
 ```shell
 python3 -m timeit -n 1000 -s "from MyModule import function_a, X, Y"
-  "function_a(X, Y)"
+    "function_a(X, Y)"
 ```
 
 ### cProfile
 ```python
 if __name__ == "__main__":
-  for function in ("function_a", "function_b", "function_c":
-    cProfile.run("for i in range(1000): {0}(X, Y)".format(function))
+    for function in ("function_a", "function_b", "function_c":
+        cProfile.run("for i in range(1000): {0}(X, Y)".format(function))
 ```
 cli:  
 ```shell
@@ -174,10 +174,10 @@ python3 -m cProfile -o profileDataFile programOrModule.py
 <!-- }}} -->
 # Classes <!-- {{{ -->
 ## Special Methods <!-- {{{ -->
-	+ __bool__ - useful for if x
-	+ __format__ - provides str.format()
-	+ __init__
-	+ etc
++ __bool__ - useful for if  
++ __format__ - provides str.format()  
++ __init__  
++ etc
 <!-- }}} -->
 ## Variables <!-- {{{ -->
 ### How they are inited
@@ -197,17 +197,17 @@ class Point:
         self.x = x
         self.y = y
 ```
-it works __faster__. if subclassing, we have to reimplement __slots__
-if empty => __slots__ = ()
+it works __faster__. if subclassing, we have to reimplement __slots__  
+if empty => __slots__ = ()  
 ### Creating attributes on fly
 ```python
 class Ords:
     def __getattr__(self, char):
-		return ord(char)
+        return ord(char)
 ```
 when accessing attributes first call is __getattribute__(), then __getattr__()  
-	+ getattribute -- invoked before looking at the actual attributes
-	+ getattr -- invoked if the attribute wasn't found the usual ways
++ getattribute -- invoked before looking at the actual attributes  
++ getattr -- invoked if the attribute wasn't found the usual ways  
 
 <!-- }}} -->
 ## Function manipulation <!-- {{{ -->
@@ -223,7 +223,7 @@ raise TypeError("unsupported operand type(s) for +: "
 calling functions according to input:
 ```python
 functions = dict(a=add_dvd, e=edit_dvd, l=list_dvds, 
-				r=remove_dvd, i=import_, x=export, q=quit)
+            r=remove_dvd, i=import_, x=export, q=quit)
 functions[action](db)
 ```
 <!-- }}} -->
@@ -316,24 +316,24 @@ dictionary - attributes
 <!-- }}} -->
 # Lists <!-- {{{ -->
 generator expressions:  
-	+ `(expression for item in iterable)`
-	+ `(expression for item in iterable if condition)`
-generator via functions:
++ `(expression for item in iterable)`  
++ `(expression for item in iterable if condition)`  
+generator via functions:  
 ```python
 def quarters(next_quarter=0.0):
-  while True:
-    yield next_quarter
-    next_quarter += 0.25
+    while True:
+        yield next_quarter
+        next_quarter += 0.25
 ```
 generators with control flow
 ```python
 def quarters(next_quarter=0.0):
-	while True:
-		received = (yield next_quarter)
-		if received is None:
-			next_quarter += 0.25
-		else:
-			next_quarter = received
+    while True:
+        received = (yield next_quarter)
+        if received is None:
+            next_quarter += 0.25
+        else:
+            next_quarter = received
 ```
 use:
 ```python
@@ -357,10 +357,10 @@ area_of_sphere = context["area_of_sphere"]
 ```
 all we path in context will be available in prog, and vice versa all is stored after
 code execution will be available in context. so we can use 
-context = globals().copy() to not override current dict
-	+ `exec` -- can handle any amount of code  
-	+ `eval` -- can handle only single expression  
-use of function.cache = {} to memoize data, _like here `https://jeremykun.com/2012/03/22/caching-and-memoization/`_
+context = globals().copy() to not override current dict  
++ `exec` -- can handle any amount of code  
++ `eval` -- can handle only single expression  
+use of function.cache = {} to memoize data, _like here `https://jeremykun.com/2012/03/22/caching-and-memoization/`_  
 <!-- }}} -->
 # Optimization <!-- {{{ -->
 fast creating constants
