@@ -441,6 +441,9 @@ nnoremap ; :
 " forgot to open file with sudo
 " just type :w!!
 cmap w!! w !sudo tee % >/dev/null
+" just remove highlight for current search
+" (will remain for other)
+nnoremap <leader>/ :nohlsearch<cr>
 
 """ Movement {{{
   " Make j and k move to the next row, not file line

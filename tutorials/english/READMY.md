@@ -6,17 +6,6 @@ _book: Basic English Grammas. second edition._
 ## Prepositions.
 __Preposition phrase__ - a preposition + a noun. _(at the library)_  
 
-## Prepositions of location  
-My book is __on__ my desk.  
-	+ on = a preposition
-	+ my desk = object of the preposition
-	+ on my desk = prepositional phrase
-Tom lives __in__ _the United States_ .  
-	+ __in__ a country and __in__ a city  
-	+ __on__ a streen, avenue, road, etc  
-	+ __at__ an adress
-The man is __in back of__ the bus. -- man is outside and begind the bus.
-The man is __in the back of__ the bus. -- man is inside.  
 
 ## Talk to, talk on
 __talk to__ (someone)  
@@ -81,7 +70,7 @@ __Noncount__ - we can't count this (like sand, or luck)
 A noncount none:  
 + Do not use _a_.  
 + Do not use _one_.  
-+ Does not have a plural form. (however are used with `is there`)
++ Does not have a plural form. (however are used with `is there`)  
 _(How much coffee is there in that pot?)_  
 _(noncount nones usually acts like a group of nouns: jewelry, meat,
 fruit, mail, advice)._  
@@ -173,7 +162,6 @@ I don't have **any money**. (noncount noun)
 I don't have **any matches**. (plural count noun)   
 _Any_ is used with noncount nouns and plural count nouns.  
 <!-- }}} -->
-
 ## Questions. <!-- {{{ -->
 ### What\Who
 __What__ asks about things.  
@@ -197,14 +185,13 @@ They come in front of nouns.
 want, hear, undestand, need, see, know, like, smell, believe, love,
 taste, think (meaning believe), hate.
 
-
 ## Using THIS and THAT.
 _this book_ = the book is near me.  
 _that book_ = the book is not near me.  
 respectively - these and those.  
 
-<!--  Tenses {{{  -->
-## Simple Present  
+# Tenses <!-- {{{ -->
+## Simple Present <!-- {{{ -->
 _The simple present tense expresses habits._  
 Verb after she, he, it (3rd person singular) has a final -s: talks.  
 ### Negative
@@ -222,10 +209,12 @@ __What time__ do you go to class?
 ### Using frequency adverbs.  
 Subject + frequency adverb + present verb.  
 with __be__:  
-	+ Tom + is + "freq. adverbs" + late for class.
++ Tom + is + "freq. adverbs" + late for class.  
++ Tom + "freq. adverbs" + __comes__ late.  
 Frequency adverbs come before all simple present verbs except be.
-	+ Tom + "freq. adverbs" + __comes__ late.  
-## Present Progressive  
+<!-- }}} -->
+## Present Progressive <!-- {{{ -->
+
 _The present progressive is also called the "present continuous" or the
 "continuous present."_
 am/is/are + -ing; I __am sitting__ in class right now.  
@@ -239,7 +228,51 @@ _(incorrect: I am wanting an apple.)_
 __Is__ Mary __sleeping__? -> Yes, __she is__. (She's sleeping.)  
 __Where is__ Mary __sleeping__?  
 <!-- }}} -->
+## Past <!-- {{{ -->
+### Using be
+| Present time                 | Past time                         |  
+| ---                          | ---                               |  
+| I **am** in class **today**. | I **was** in class **yesterday**. |  
+Singular - **was**  
+Plural (and _you_ in all forms) - **were**  
+I **was not** in class yesterday.  
+They **weren't** at home last night.  
+| Present      | Past              |  
+| ---          | ---               |  
+| today        | yesterday         |  
+| this morning | yesterday morning |  
+| tonight      | last night        |  
+| this week    | last week         |  
+Questions:  
+Yes/no que: _(be) + (subject)_  
+**Were** **you** in class yesterday? $rarr; **Yes, I was.** (I was in
+class yesterday.)  
+Information que: _where + (be) + (subject)_  
+**Where** **were** **you** yesterday? $rarr; **_In class._** (I was in
+class yesterday.)  
+### Simple past tense: using -ed
+_verb_ + **_ed_** = the simple past tense  
+simple present: I **walk** to school **every day**.  
+simple past: I **walked** to school **yesterday**.  
+### Spelling of -ed verbs
++ end of verb: a consonant + **_-e_** $rarr; add **_-d_**.
+smile $rarr; smiled  
++ one vowel + one consonant $rarr; double the consonant, add **_-ed_**.
+  stop $rarr; stopped  
++ consonant + **_-y_** $rarr; change **_-y_** to **_-i_**, 
+add **_ed_**. study $rarr; studied  
++ vowel + **_-y_** $rarr; add **_-ed_**; 
+do not change **_-y_** to **_-i_**. play $rarr; played  
 
+### Past time words: yesterday, last, and ago
++ _yesterday_ is used with _morning, afternoon,_ and _evening_.  
++ _last_ is used with _night_, with long periods of time _(week, month,
+  year)_, with seasons _(spring, summer, etc.)_, and with days of the
+  week.  
++ _ago_ means "in the past." It follows specific lengths of time (e.g.
+  _two minutes_ + ago, _five years_ + ago).  
+<!-- }}} -->
+<!-- }}} -->
 ## Time <!-- {{{ -->
 ### Using _it_ to talk about time.
 What day is it? -- It's Monday.  
@@ -250,11 +283,11 @@ __at__ + a specific time on the clock; __at__ + night
 We have class __at__ one o'clock.  
 We sleep __at__ night.  
 __in__ + :  
-	+ cpecific month.	My birthday is __in__ October.  
-	+ specific year.	I was born __in__ 1960.  
-	+ the morning.
-	+ the afternoon.  
-	+ the evening.  
++ cpecific month. My birthday is __in__ October.  
++ specific year. I was born __in__ 1960.  
++ the morning.
++ the afternoon.  
++ the evening.  
 __on__ + a specific day of the week.  
 __on__ + a specific date.
 I have class __on__ Monday.  
@@ -262,6 +295,19 @@ I was born __on__ October 31,1975.
 __from...to__ __from__(a specific time) __to__ (a specific time)  
 We have class __from__ 1:00 __to__ 2:00.  
 <!--   }}} -->
+## Location <!-- {{{ -->
+### Prepositions of location  
+My book is __on__ my desk.  
++ on = a preposition  
++ my desk = object of the preposition  
++ on my desk = prepositional phrase  
+Tom lives __in__ _the United States_ .  
++ __in__ a country and __in__ a city  
++ __on__ a streen, avenue, road, etc  
++ __at__ an adress  
+The man is __in back of__ the bus. -- man is outside and begind the bus.  
+The man is __in the back of__ the bus. -- man is inside.  
+<!-- }}} -->
 ## Weather <!-- {{{ -->
 __It's__ sunny today.  
 __It's__ hot and humid today.  
@@ -323,9 +369,9 @@ I __think that__ Sue is lazy. -- In my optinion, Sue is lazy. I velieve
 that Sue is lazy.  
 People use __think that__ when they want to say (to state) their
 beliefs.  
-The _present progressive_ is:
-	+ often used with __think about__
-	+ almost never used with __think that__
+The _present progressive_ is:  
++ often used with __think about__  
++ almost never used with __think that__  
 I __think that__ Mike is a nice person.  
 I __think__ Mike is a nice person. -- people often omit __that__ after
 __think__, especially in speaking.  
@@ -337,7 +383,24 @@ Q: __Is there any milk__ in the refrigerator?
 A: Yes, there is. No, there isn't.  
 Asking Q with how many:
 __How many__ chapters __are there__ in this book?  
-
-
-
+<!-- }}} -->
+# Spell right <!-- {{{ -->
+## Single words <!-- {{{ -->
+### Arrive <!-- {{{ -->
++ I arrive _in_ a country or _in_ a city  
++ I arrive _at_ a particular place (a building, an airport, a house, an
+  apartment, a party, etc.)  
+**_Arrive_** is followed by either _in_ or _at_. **_Arrive_** is not
+followed by _to_.  
+<!-- }}} -->
+<!-- }}} -->
+<!-- }}} -->
+# Pronunciation <!-- {{{ -->
+## -ed: /t/, /d/, and /ed/ <!-- {{{ -->
+| End of verb  | Sinple form | Simple past | Pronunciation |
+| ---          | ---         | ---         | ---           |
+| voiceless    | help        | helped      | _help/t/_     |
+| voiced       | rub         | rubbed      | _rub/d/_      |
+| _-d_ or _-t_ | need        | needed      | _need/ed/_    |
+<!-- }}} -->
 <!-- }}} -->
