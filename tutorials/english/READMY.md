@@ -254,15 +254,19 @@ class yesterday.)
 _verb_ + **_ed_** = the simple past tense  
 simple present: I **walk** to school **every day**.  
 simple past: I **walked** to school **yesterday**.  
-### Spelling of -ed verbs
+#### Spelling of -ed verbs
 + end of verb: a consonant + **_-e_** $rarr; add **_-d_**.
 smile $rarr; smiled  
 + one vowel + one consonant $rarr; double the consonant, add **_-ed_**.
   stop $rarr; stopped  
+    - stress on first syllable $rarr; not doubled  
+    - stress on the second syllable $rarr; doubled  
 + consonant + **_-y_** $rarr; change **_-y_** to **_-i_**, 
 add **_ed_**. study $rarr; studied  
 + vowel + **_-y_** $rarr; add **_-ed_**; 
 do not change **_-y_** to **_-i_**. play $rarr; played  
+
+### Simple past tense: using where, when, what time, and why
 
 ### Past time words: yesterday, last, and ago
 + _yesterday_ is used with _morning, afternoon,_ and _evening_.  
@@ -271,42 +275,47 @@ do not change **_-y_** to **_-i_**. play $rarr; played
   week.  
 + _ago_ means "in the past." It follows specific lengths of time (e.g.
   _two minutes_ + ago, _five years_ + ago).  
+
+### Irregular verbs  
+_Some verbs do not have **ed** forms. The past form is irregular._  
+| Present | Past    |
+| ---     | ---     |
+| come    | came    |
+| do      | did     |
+| eat     | ate     |
+| get     | got     |
+| go      | went    |
+| have    | had     |
+| put     | put     |
+| see     | saw     |
+| sit     | sat     |
+| sleep   | slept   |
+| stand   | stood   |
+| write   | wrote   |
+| bring   | brought |
+| buy     | bought  |
+| catch   | caught  |
+| drink   | drank   |
+| drive   | drove   |
+| read    | read    |
+| ride    | rode    |
+| run     | ran     |
+| teach   | taught  |
+| think   | thought |
+
+### Negative
+(pronoun / noun) + **_did_** **_not_** + main verb\*(simple form).  
+I **_did_** **_not_** **_walk_** to school yesterday.  
+Notice that the simple form of the main virb is used with **_did not_**.  
+**_did_** is not used when the main verb is **_be_**.:  
++ incorrect: Joe _didn't_ be here yesterday.  
++ correct: Joe _wasn't_ here yesterday.  
+
+### Questions
+#### yes/no
+structure: _did_ + _subject_ + _main verb_  
+**_Did_** **_Mary_** **_walk_** to school? $rarr; **_Yes, she did_**.  
 <!-- }}} -->
-<!-- }}} -->
-## Time <!-- {{{ -->
-### Using _it_ to talk about time.
-What day is it? -- It's Monday.  
-What's the date today? -- It's Semptember 15th.  
-What time is it? -- It's nine.  
-### Prepositions of time.  
-__at__ + a specific time on the clock; __at__ + night  
-We have class __at__ one o'clock.  
-We sleep __at__ night.  
-__in__ + :  
-+ cpecific month. My birthday is __in__ October.  
-+ specific year. I was born __in__ 1960.  
-+ the morning.
-+ the afternoon.  
-+ the evening.  
-__on__ + a specific day of the week.  
-__on__ + a specific date.
-I have class __on__ Monday.  
-I was born __on__ October 31,1975.  
-__from...to__ __from__(a specific time) __to__ (a specific time)  
-We have class __from__ 1:00 __to__ 2:00.  
-<!--   }}} -->
-## Location <!-- {{{ -->
-### Prepositions of location  
-My book is __on__ my desk.  
-+ on = a preposition  
-+ my desk = object of the preposition  
-+ on my desk = prepositional phrase  
-Tom lives __in__ _the United States_ .  
-+ __in__ a country and __in__ a city  
-+ __on__ a streen, avenue, road, etc  
-+ __at__ an adress  
-The man is __in back of__ the bus. -- man is outside and begind the bus.  
-The man is __in the back of__ the bus. -- man is inside.  
 <!-- }}} -->
 ## Weather <!-- {{{ -->
 __It's__ sunny today.  
@@ -385,6 +394,41 @@ Asking Q with how many:
 __How many__ chapters __are there__ in this book?  
 <!-- }}} -->
 # Spell right <!-- {{{ -->
+## Time <!-- {{{ -->
+### Using _it_ to talk about time.
+What day is it? -- It's Monday.  
+What's the date today? -- It's Semptember 15th.  
+What time is it? -- It's nine.  
+### Prepositions of time.  
+__at__ + a specific time on the clock; __at__ + night  
+We have class __at__ one o'clock.  
+We sleep __at__ night.  
+__in__ + :  
++ cpecific month. My birthday is __in__ October.  
++ specific year. I was born __in__ 1960.  
++ the morning.
++ the afternoon.  
++ the evening.  
+__on__ + a specific day of the week.  
+__on__ + a specific date.
+I have class __on__ Monday.  
+I was born __on__ October 31,1975.  
+__from...to__ __from__(a specific time) __to__ (a specific time)  
+We have class __from__ 1:00 __to__ 2:00.  
+<!--   }}} -->
+## Location <!-- {{{ -->
+### Prepositions of location  
+My book is __on__ my desk.  
++ on = a preposition  
++ my desk = object of the preposition  
++ on my desk = prepositional phrase  
+Tom lives __in__ _the United States_ .  
++ __in__ a country and __in__ a city  
++ __on__ a streen, avenue, road, etc  
++ __at__ an adress  
+The man is __in back of__ the bus. -- man is outside and begind the bus.  
+The man is __in the back of__ the bus. -- man is inside.  
+<!-- }}} -->
 ## Single words <!-- {{{ -->
 ### Arrive <!-- {{{ -->
 + I arrive _in_ a country or _in_ a city  
