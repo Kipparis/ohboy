@@ -50,6 +50,7 @@ little finger - мизинец
 [Position]
 accountant - бухгалтер
 joggers - бугены
+landlord - арендодатель
 
 [Feelings]
 thirsty - жаждущий
@@ -181,6 +182,7 @@ dream - мечтать
 poverty - бедность
 admire - восхищаться
 inch - дюйм
+laundromat - прачечная-автомат
 
 [Nationalities] 
 American
@@ -195,4 +197,5 @@ Malaysian
 Mexican
 Saudi Arabian 
 
-
+[Phrase]
+burn that into your brain

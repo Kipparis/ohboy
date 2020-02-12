@@ -185,11 +185,6 @@ They come in front of nouns.
 want, hear, undestand, need, see, know, like, smell, believe, love,
 taste, think (meaning believe), hate.
 
-## Using THIS and THAT.
-_this book_ = the book is near me.  
-_that book_ = the book is not near me.  
-respectively - these and those.  
-
 # Tenses <!-- {{{ -->
 ## Simple Present <!-- {{{ -->
 _The simple present tense expresses habits._  
@@ -267,6 +262,14 @@ add **_ed_**. study $rarr; studied
 do not change **_-y_** to **_-i_**. play $rarr; played  
 
 ### Simple past tense: using where, when, what time, and why
+_Did_ you _go_ downtown? $rarr; yes, I did. / No, I didn't.  
+**_Where_** _did_ you _go_? $rarr; **_Downtown_**  
+---  
+_Did_ you _run_ because you were late? $rarr; Yes, I did  
+**_Why_** _did_ you _run?_ $rarr; **_Because I was late_**.  
+---  
+_Did_ Ann _come_ as six? $rarr; Yes, she did.  
+**_When/What time_** did Ann come? $rarr; **_At six._**  
 
 ### Past time words: yesterday, last, and ago
 + _yesterday_ is used with _morning, afternoon,_ and _evening_.  
@@ -302,6 +305,18 @@ _Some verbs do not have **ed** forms. The past form is irregular._
 | run     | ran     |
 | teach   | taught  |
 | think   | thought |
+| break   | broke   |
+| fly     | flew    |
+| hear    | heard   |
+| leave   | left    |
+| meet    | met     |
+| pay     | paid    |
+| ring    | rang    |
+| send    | sent    |
+| sing    | sang    |
+| speak   | spoke   |
+| take    | took    |
+| wake up | woke up |
 
 ### Negative
 (pronoun / noun) + **_did_** **_not_** + main verb\*(simple form).  
@@ -315,15 +330,39 @@ Notice that the simple form of the main virb is used with **_did not_**.
 #### yes/no
 structure: _did_ + _subject_ + _main verb_  
 **_Did_** **_Mary_** **_walk_** to school? $rarr; **_Yes, she did_**.  
+
+### Time clauses
+A clause is a group of words that has a subject and a verb.  
+_I ate breakfast._ = main clause -- complete sentece  
+_**before** I went to class_ = time clause -- incomplete sentence. It
+must be connected to a main clause.  
+A time clause can begin with **_before_** or **_after_**:  
++ **_before_** + subject + verb = a time clause  
++ **_after_** + subject + verb = a time clause  
+We took a walk _**after** we finished our work_.  
+_**After** we finished our work,_ we took a walk.  
+**_Before_** and **_after_** don't always introduce a time clause.  
++ We took a walk _after the movie._  
++ I had a cup of coffee _before class._  
+_**When** the rain stopped,_ we took a walk -- **_When_** can introduce a time clause.
+
+
+<!-- }}} -->
+## Future <!-- {{{ -->
+### Using be going to
+**_Be going to_** expresses (talks about) the future.  
+form: _**am/is/are**_ + **_going_** + infonitive  
+I **_am goind to go_** downtown tomorrow  
+Negative: **_be_** + **_not_** + **_going to_**  
+I**_'m not goint to go_** downtown tomorrow.  
+Questions: **_be_** + _subject_ + **_going to_**  
+Q: **_Are_** you **_going to come_** to class tomorrow?  
+A: No, I'm not.  
+### Next
+_It's going to rain **tomorrow**_.  
+_I'm going to be_ in class **_tomorrow morning._**  
 <!-- }}} -->
 <!-- }}} -->
-## Weather <!-- {{{ -->
-__It's__ sunny today.  
-__It's__ hot and humid today.  
-_Asking:_  
-__What's the weather like__ in Istanbul in January?  
-__How's the weather__ in Moscow in the summer?  
-<!--}}}-->
 ## Parts of words <!-- {{{ -->
 ### Final -s (singular/plural)  
 Final __*s*__ pronounces /z/ after voiced sounds (rubs - rub/z/).  
@@ -344,8 +383,8 @@ not double w,x, and y)_.
 + snow -> snowing  
 + fix -> fixing  
 <!-- }}} -->
-## Meaning <!-- {{{ -->
-### See, look at, watch, hear, and listen to 
+# Meaning <!-- {{{ -->
+## See, look at, watch, hear, and listen to 
 I __see__ many things in this room. -- __see__ = a nonaction verb. Seeing
 happens because my eyes are open. Seeing is a physical reaction, not a
 planned action.  
@@ -360,16 +399,16 @@ unplanned act. It expresses a physical reaction
 I'm in my apartment. I'm studying. I have a tape recorder. I __am
 listening to__ music. I like to listen to music when I study. --
 __listen (to)__ = an action verb. Listening happens for a purpose.  
-### Need and want + a noun or an infinitive 
+## Need and want + a noun or an infinitive 
 We __need food__.  
 I __want a sandwich__.  
 __Need__ is stronger than __want__. __Need__ gives the idea that
 something is very important.   
-### Would like  
+## Would like  
 I'm thirsty. I __want__ a glass of water.  
 I'm thirsty. I __would like__ a glass of water.  
 I _would like_ is a nice way of saying _I want_.
-### _Think about_ and _thing that_
+## _Think about_ and _thing that_
 I __think about__ my family every day. -- Ideas about my family are in my
 mind every day.  
 I __am thinking about__ grammar right now. -- My mind is busy now. Ideas
@@ -384,7 +423,7 @@ The _present progressive_ is:
 I __think that__ Mike is a nice person.  
 I __think__ Mike is a nice person. -- people often omit __that__ after
 __think__, especially in speaking.  
-### There + be  
+## There + be  
 __There is a bird__ in the tree.  
 __There + be__ is used to say that something exists in a particular
 location.  
@@ -392,6 +431,25 @@ Q: __Is there any milk__ in the refrigerator?
 A: Yes, there is. No, there isn't.  
 Asking Q with how many:
 __How many__ chapters __are there__ in this book?  
+## What time, when
+**_What 09:58 usually asks specifically for time on a clock._**  
+The answer to **_when_** can be various expressions of time.  
+## Using THIS and THAT.
+_this book_ = the book is near me.  
+_that book_ = the book is not near me.  
+respectively - these and those.  
+## What, who  
+**_What_** is used in a question when you want to dinf out about a
+thing.  
+(c) **_Who_** is used when you want to find out about a person.  
+(d) **_Whom_** did they see? $rarr; **_Jim._** _(They saw Jim.)_  
+(c) and (d) have the same meaning. **_who_** is usually used in everyday
+English. **_whom_** is used in very formal English. **_Whom_** is rarely
+used in everyday spoken English.  
+## Asking about the meaning of a word  
+**_What does_** "pretty" **_mean_**?  
+**_What is the meaning of_** "pretty"?
+_Incorrect: What means "pretty"?_  
 <!-- }}} -->
 # Spell right <!-- {{{ -->
 ## Time <!-- {{{ -->
@@ -416,6 +474,13 @@ I was born __on__ October 31,1975.
 __from...to__ __from__(a specific time) __to__ (a specific time)  
 We have class __from__ 1:00 __to__ 2:00.  
 <!--   }}} -->
+## Weather <!-- {{{ -->
+__It's__ sunny today.  
+__It's__ hot and humid today.  
+_Asking:_  
+__What's the weather like__ in Istanbul in January?  
+__How's the weather__ in Moscow in the summer?  
+<!--}}}-->
 ## Location <!-- {{{ -->
 ### Prepositions of location  
 My book is __on__ my desk.  
@@ -438,6 +503,11 @@ The man is __in the back of__ the bus. -- man is inside.
 followed by _to_.  
 <!-- }}} -->
 <!-- }}} -->
+## Questions <!-- {{{ -->
+Q: How are you today?  
+A: I do fine, thank you. And you?  
+---  
+<!-- }}} -->
 <!-- }}} -->
 # Pronunciation <!-- {{{ -->
 ## -ed: /t/, /d/, and /ed/ <!-- {{{ -->
@@ -448,3 +518,19 @@ followed by _to_.
 | _-d_ or _-t_ | need        | needed      | _need/ed/_    |
 <!-- }}} -->
 <!-- }}} -->
+# Combinations of tense and words
+## Using _a couple of_ or _a few_ with _ago_(past) and _in_(future)  
+Numbers are often used in time expressions with **_ago_** and **_in_**.  
++ Sam arrived here **_one_**(or: **_a_**) _year ago_.  
++ Jack is going to be here _in **two** minutes_.  
+I saw Carlos **_a couple of_** _months ago_. - **_A couple of_** menas
+"two." _A couple of months ago_ = two months ago.  
+I go a letter from Gina _**a few** weeks ago_.  - **_A few_** means "a
+small number, not a large number." _A few weeks ago_ = three, four, or
+five weeks ago.  
+Frequently the word **_more_** is used in future time expressions that
+begin with **_in_**.  
+I began college last year. I'm going to graduate _in **two more**
+years_. My sister is almost finished with her education. She's going to
+graduate _in **a few more** months_. She's going to graduate _in **three
+more** months_.
